@@ -1,18 +1,18 @@
 
 # Loan Risk Analysis
 
-Details of Assignment
+## Details of Assignment
 
-![Details of Assignment]("C:\Users\sudha\OneDrive\Pictures\Screenshots\Screenshot 2024-01-31 183431.png")
+![Details of Assignment](https://github.com/Madhun-reddy/BankingDashboard-PBI/assets/119162777/4a2ca0f3-e524-4884-9a18-d3108460f83b)
 
 # Loan Risk Dashboard
 
-![Risk Dashboard]("C:\Users\sudha\Downloads\Telegram Desktop\photo_2024-01-31_17-02-30.jpg")
+![Risk Dashboard](https://github.com/Madhun-reddy/BankingDashboard-PBI/assets/119162777/3cd500a5-8785-49a6-a60c-ad87009d0c15)
 
 
 ## Problem Statement
 
-![Requirements]("C:\Users\sudha\OneDrive\Pictures\Screenshots\Screenshot 2024-01-31 183124.png")
+![Requirements](https://github.com/Madhun-reddy/BankingDashboard-PBI/assets/119162777/1db127f6-6e24-4fe8-aa66-8917ac133769)
 
 
 ## Data Sourcing
@@ -28,7 +28,8 @@ Therefore, I created 4 new columns all extracted from the source columns mention
 	• The first column contained Loan amount details through which derived to Loan Band and Loan Band Sort columns 
 	• The second column was also manipulated from DPDs column to DPD Band and DPD Band Sort columns which were later used in summarizing data.
 	• For consistency columns have been renamed.
-    ![]("C:\Users\sudha\OneDrive\Pictures\Screenshots\Screenshot 2024-01-31 174321.png")
+    	![Screenshot 2024-01-31 174321](https://github.com/Madhun-reddy/BankingDashboard-PBI/assets/119162777/9ec7520e-2dd6-4505-beba-470ff020383f)
+
 
 
 ## Data Modelling
@@ -37,8 +38,6 @@ No modelling was required since it was just a single spreadsheet.
 
 
 ## Analysis & Visualisation
-
-![Risk Dashboard]("C:\Users\sudha\Downloads\Telegram Desktop\photo_2024-01-31_17-02-30.jpg")
 
 Here we could discover the following insights:
 
@@ -57,10 +56,12 @@ We can come to a conclusion that this is huge high risk indicator having greater
 
 ## Analysis & Visualisation
 
-![Loan Sales Dashboard]("C:\Users\sudha\Downloads\Telegram Desktop\photo_2024-01-31_17-02-26.jpg")
+![Loan Sales Dashboard](https://github.com/Madhun-reddy/BankingDashboard-PBI/assets/119162777/73fdb3d5-7a44-4ffb-9753-f885ed34f2c3)
+
 
 ## Problem Statement
 
-![Requirements]("C:\Users\sudha\OneDrive\Pictures\Screenshots\Screenshot 2024-01-31 184148.png")
+![Requirements](https://github.com/Madhun-reddy/BankingDashboard-PBI/assets/119162777/2c600593-98ff-44ec-b98c-52fe06f6604c)
+
 
 
