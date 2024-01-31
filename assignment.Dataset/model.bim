@@ -1,0 +1,930 @@
+{
+  "compatibilityLevel": 1567,
+  "model": {
+    "annotations": [
+      {
+        "name": "PBI_QueryOrder",
+        "value": "[\"Assignment\",\"Data\",\"Sales Dashboard\",\"Risk Dashboard\",\"All_measures\",\"Loan Band\"]"
+      },
+      {
+        "name": "__PBI_TimeIntelligenceEnabled",
+        "value": "1"
+      },
+      {
+        "name": "PBIDesktopVersion",
+        "value": "2.124.1805.0 (23.12)"
+      },
+      {
+        "name": "PBI_ProTooling",
+        "value": "[\"DevMode\"]"
+      }
+    ],
+    "culture": "en-IN",
+    "cultures": [
+      {
+        "name": "en-IN",
+        "linguisticMetadata": {
+          "content": {
+            "DynamicImprovement": "HighConfidence",
+            "Language": "en-US",
+            "Version": "1.0.0"
+          },
+          "contentType": "json"
+        }
+      }
+    ],
+    "dataAccessOptions": {
+      "legacyRedirects": true,
+      "returnErrorValuesAsNull": true
+    },
+    "defaultPowerBIDataSourceVersion": "powerBI_V3",
+    "expressions": [
+      {
+        "name": "Assignment",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "expression": [
+          "let",
+          "    Source = Excel.Workbook(File.Contents(\"C:\\Users\\sudha\\Downloads\\Telegram Desktop\\Hiring_Assessment.xlsx\"), null, true),",
+          "    Assignment_Sheet = Source{[Item=\"Assignment\",Kind=\"Sheet\"]}[Data],",
+          "    #\"Promoted Headers\" = Table.PromoteHeaders(Assignment_Sheet, [PromoteAllScalars=true]),",
+          "    #\"Changed Type\" = Table.TransformColumnTypes(#\"Promoted Headers\",{{\"Details of Assignment\", type any}, {\"Column2\", type text}, {\"Column3\", type text}, {\"Column4\", type any}, {\"Column5\", type any}})",
+          "in",
+          "    #\"Changed Type\""
+        ],
+        "kind": "m",
+        "lineageTag": "b6170044-36b3-4683-8af4-883ffc209e6b"
+      },
+      {
+        "name": "Sales Dashboard",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "expression": [
+          "let",
+          "    Source = Excel.Workbook(File.Contents(\"C:\\Users\\sudha\\Downloads\\Telegram Desktop\\Hiring_Assessment.xlsx\"), null, true),",
+          "    #\"Sales Dashboard_Sheet\" = Source{[Item=\"Sales Dashboard\",Kind=\"Sheet\"]}[Data],",
+          "    #\"Promoted Headers\" = Table.PromoteHeaders(#\"Sales Dashboard_Sheet\", [PromoteAllScalars=true]),",
+          "    #\"Changed Type\" = Table.TransformColumnTypes(#\"Promoted Headers\",{{\"Filters >>>>>\", type text}, {\"Column2\", type any}, {\"Lender\", type text}, {\"Region\", type text}, {\"Loan Band\", type text}, {\"Date Range\", type text}, {\"Column7\", type text}, {\"Column8\", type text}, {\"Column9\", type text}})",
+          "in",
+          "    #\"Changed Type\""
+        ],
+        "kind": "m",
+        "lineageTag": "dbad39f5-41a9-401b-80d5-a0a4fcfa322c"
+      },
+      {
+        "name": "Risk Dashboard",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "expression": [
+          "let",
+          "    Source = Excel.Workbook(File.Contents(\"C:\\Users\\sudha\\Downloads\\Telegram Desktop\\Hiring_Assessment.xlsx\"), null, true),",
+          "    #\"Risk Dashboard_Sheet\" = Source{[Item=\"Risk Dashboard\",Kind=\"Sheet\"]}[Data],",
+          "    #\"Promoted Headers\" = Table.PromoteHeaders(#\"Risk Dashboard_Sheet\", [PromoteAllScalars=true]),",
+          "    #\"Changed Type\" = Table.TransformColumnTypes(#\"Promoted Headers\",{{\"Filters >>>>>\", type text}, {\"Column2\", type any}, {\"Lender\", type text}, {\"Region\", type text}, {\"Loan Band\", type text}, {\"Date Range\", type any}, {\"DPD Band (30+/ 60+/ 90+)\", type text}, {\"Column8\", type text}, {\"Column9\", type text}})",
+          "in",
+          "    #\"Changed Type\""
+        ],
+        "kind": "m",
+        "lineageTag": "415aa53f-ef3a-4bed-af5a-841cec347992"
+      },
+      {
+        "name": "Loan Band",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "expression": [
+          "let",
+          "    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText(\"i45WMlDSUTI0AAOlWJ1oOFtHyRhJ1BguaookagoXVYqNBQA=\", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [Low = _t, High = _t]),",
+          "    #\"Changed Type\" = Table.TransformColumnTypes(Source,{{\"Low\", Int64.Type}, {\"High\", Int64.Type}}),",
+          "    #\"Added Custom\" = Table.AddColumn(#\"Changed Type\", \"LoanBandRange\", each Text.From([Low]/100000) & \"-\" & Text.From([High]/100000))",
+          "in",
+          "    #\"Added Custom\""
+        ],
+        "kind": "m",
+        "lineageTag": "d134959b-8738-4f5c-a47e-e146f05200ed"
+      }
+    ],
+    "relationships": [
+      {
+        "name": "56556347-d2d1-47e6-abbf-5ff9f1071958",
+        "fromColumn": "Loan Sanction Date",
+        "fromTable": "Data",
+        "joinOnDateBehavior": "datePartOnly",
+        "toColumn": "Date",
+        "toTable": "LocalDateTable_7f19aaf2-5c8d-4d14-b4e3-c001cc711ada"
+      }
+    ],
+    "sourceQueryCulture": "en-IN",
+    "tables": [
+      {
+        "name": "Data",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Lender",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "7fe2060c-7663-43cf-b0c2-ed2245c6e851",
+            "sourceColumn": "Lender",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "LoanID",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "12f87188-90ee-47ac-b873-14fe46f49934",
+            "sourceColumn": "LoanID",
+            "summarizeBy": "count"
+          },
+          {
+            "name": "Loan Amount",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "SortByColumn"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "01805ae8-6dd6-4543-9738-02944b85c8e1",
+            "sortByColumn": "Loan Band Sort",
+            "sourceColumn": "Loan Amount",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Loan Sanction Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "UnderlyingDateTimeDataType",
+                "value": "Date"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "Long Date",
+            "lineageTag": "cff4b456-5791-4a6f-9b98-8759e6c68eb5",
+            "sourceColumn": "Loan Sanction Date",
+            "summarizeBy": "none",
+            "variations": [
+              {
+                "name": "Variation",
+                "defaultHierarchy": {
+                  "hierarchy": "Date Hierarchy",
+                  "table": "LocalDateTable_7f19aaf2-5c8d-4d14-b4e3-c001cc711ada"
+                },
+                "isDefault": true,
+                "relationship": "56556347-d2d1-47e6-abbf-5ff9f1071958"
+              }
+            ]
+          },
+          {
+            "name": "Type of Employment",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "b8881707-34a9-4d83-8f8a-b301d60c80e8",
+            "sourceColumn": "Type of Employment",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Branch",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "29351f4d-230e-4db0-86c9-a42f21f69cef",
+            "sourceColumn": "Branch",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Pincode",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "759e14b3-aeaf-451f-8d0e-86fd6a2df971",
+            "sourceColumn": "Pincode",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "State",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "c2c41a2c-8b42-4e57-9e7f-6f965c3000a0",
+            "sourceColumn": "State",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Region",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "8e5e8434-bd1f-43dc-8b36-e9c081e0f5cb",
+            "sourceColumn": "Region",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "DPDs",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "7d77419b-e02a-4623-b7be-0991ede351da",
+            "sourceColumn": "DPDs",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Loan Band",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "SortByColumn"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "e185290e-3923-4e1c-90a5-34b1aff37f30",
+            "sortByColumn": "Loan Band Sort",
+            "sourceColumn": "Loan Band",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Loan Band Sort",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "67459127-d3a2-4a05-aa3c-883a220049d7",
+            "sourceColumn": "Loan Band Sort",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "DPD Band",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "SortByColumn"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "0c636c52-954a-4a70-adb7-24ec72b60a5b",
+            "sortByColumn": "DPD Band Sort",
+            "sourceColumn": "DPD Band",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "DPD Band Sort",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "361fb838-1fe8-4de3-81e6-1c59c2d47b43",
+            "sourceColumn": "DPD Band Sort",
+            "summarizeBy": "sum"
+          }
+        ],
+        "lineageTag": "cf109463-92ad-45c6-9a21-ca5ff7e095b4",
+        "partitions": [
+          {
+            "name": "Data",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Excel.Workbook(File.Contents(\"C:\\Users\\sudha\\Downloads\\Telegram Desktop\\Hiring_Assessment.xlsx\"), null, true),",
+                "    Data_Sheet = Source{[Item=\"Data\",Kind=\"Sheet\"]}[Data],",
+                "    #\"Promoted Headers\" = Table.PromoteHeaders(Data_Sheet, [PromoteAllScalars=true]),",
+                "    #\"add Loan Band col\" = Table.AddColumn(#\"Promoted Headers\", \"Loan Band\", each if [Loan Amount] >= 5000000 then \"50 lacs+\" else if [Loan Amount] >= 3000000 then \"30 - 50\" else if [Loan Amount] >= 1000000 then \"10 - 30\" else \"Less than 10 lacs\"),",
+                "    #\"add Loan Band sort\" = Table.AddColumn(#\"add Loan Band col\", \"Loan Band Sort\", each if [Loan Band] = \"Less than 10 lacs\" then 1 else if [Loan Band] = \"10 - 30\" then 2 else if [Loan Band] = \"30 - 50\" then 3 else 4, type number),",
+                "    #\"Changed Type\" = Table.TransformColumnTypes(#\"add Loan Band sort\",{{\"CLIENT/ Lender\", type text}, {\"LOANID\", Int64.Type}, {\"Loan Amount\", Int64.Type}, {\"Loan Sanction DATE\", type date}, {\"Type_of_Employment\", type text}, {\"BRANCHNAME\", type text}, {\"PIN\", Int64.Type}, {\"State\", type text}, {\"Region\", type text}, {\"DPDs\", Int64.Type}, {\"Loan Band\", type text}, {\"Loan Band Sort\", type text}}),",
+                "    #\"Renamed Columns\" = Table.RenameColumns(#\"Changed Type\",{{\"CLIENT/ Lender\", \"Lender\"}, {\"BRANCHNAME\", \"Branch\"}, {\"PIN\", \"Pincode\"}, {\"Type_of_Employment\", \"Type of Employment\"}, {\"Loan Sanction DATE\", \"Loan Sanction Date\"}, {\"LOANID\", \"LoanID\"}}),",
+                "    #\"add DPD Band\" = Table.AddColumn(#\"Renamed Columns\", \"DPD Band\", each if [DPDs] >= 91 then 90 else if [DPDs] >= 61 then 60 else if [DPDs] >= 31 then 30 else \"Current\"),",
+                "    #\"add DPD Band Sort\" = Table.AddColumn(#\"add DPD Band\", \"DPD Band Sort\", each if [DPDs] >= 91 then 4 else if [DPDs] >= 61 then 3 else if [DPDs] >= 31 then 2 else 1),",
+                "    #\"Changed Type1\" = Table.TransformColumnTypes(#\"add DPD Band Sort\",{{\"DPD Band\", type text}, {\"DPD Band Sort\", Int64.Type}})",
+                "in",
+                "    #\"Changed Type1\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "DateTableTemplate_61d86e4b-d4a9-4cfd-ba40-21edc81122df",
+        "annotations": [
+          {
+            "name": "__PBI_TemplateDateTable",
+            "value": "true"
+          },
+          {
+            "name": "DefaultItem",
+            "value": "DateHierarchy"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "PaddedDateTableDates",
+            "dataType": "dateTime",
+            "formatString": "General Date",
+            "isHidden": true,
+            "isNameInferred": true,
+            "lineageTag": "04739ebc-1b24-48da-b451-a3a46b4c51a7",
+            "sourceColumn": "[Date]",
+            "summarizeBy": "none",
+            "type": "calculatedTableColumn"
+          },
+          {
+            "name": "Year",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Year"
+              }
+            ],
+            "dataCategory": "Years",
+            "dataType": "int64",
+            "expression": "YEAR([Date])",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "7a31ea83-d77b-4728-973c-483abc2d433b",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "MonthNo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "MonthNumber"
+              }
+            ],
+            "dataCategory": "MonthOfYear",
+            "dataType": "int64",
+            "expression": "MONTH([Date])",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "6e315ef0-d3fa-41ae-a8da-1128ebc0c70c",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Month",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Month"
+              }
+            ],
+            "dataCategory": "Months",
+            "dataType": "string",
+            "expression": "FORMAT([Date], \"MMMM\")",
+            "isHidden": true,
+            "lineageTag": "bd007714-1c8d-4615-be73-84e953c7a7bf",
+            "sortByColumn": "MonthNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "QuarterNo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "QuarterNumber"
+              }
+            ],
+            "dataCategory": "QuarterOfYear",
+            "dataType": "int64",
+            "expression": "INT(([MonthNo] + 2) / 3)",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "b7c16c92-eca8-4224-a51d-712ac5d7ea39",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Quarter",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Quarter"
+              }
+            ],
+            "dataCategory": "Quarters",
+            "dataType": "string",
+            "expression": "\"Qtr \" & [QuarterNo]",
+            "isHidden": true,
+            "lineageTag": "606906fb-a832-4b79-a2bc-aa666a755fb4",
+            "sortByColumn": "QuarterNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Day",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Day"
+              }
+            ],
+            "dataCategory": "DayOfMonth",
+            "dataType": "int64",
+            "expression": "DAY([Date])",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "e4fb2ad3-549b-428f-b0fb-bbc98d31fc34",
+            "summarizeBy": "none",
+            "type": "calculated"
+          }
+        ],
+        "hierarchies": [
+          {
+            "name": "Date Hierarchy",
+            "annotations": [
+              {
+                "name": "TemplateId",
+                "value": "DateHierarchy"
+              }
+            ],
+            "levels": [
+              {
+                "name": "Year",
+                "column": "Year",
+                "lineageTag": "a9eafcca-27a2-4903-a4d9-97b9620fbd88",
+                "ordinal": 0
+              },
+              {
+                "name": "Quarter",
+                "column": "Quarter",
+                "lineageTag": "9c1005f2-c7ce-48e5-a65a-91e3c721680d",
+                "ordinal": 1
+              },
+              {
+                "name": "Month",
+                "column": "Month",
+                "lineageTag": "779c3a79-fd04-4ee6-a38c-f4495456f1bc",
+                "ordinal": 2
+              },
+              {
+                "name": "Day",
+                "column": "Day",
+                "lineageTag": "ee813d0a-0807-4678-a6eb-6370bbb53593",
+                "ordinal": 3
+              }
+            ],
+            "lineageTag": "f40b20a6-5150-4a68-a7e7-a8c07aab7a68"
+          }
+        ],
+        "isHidden": true,
+        "isPrivate": true,
+        "lineageTag": "a2afdbec-e1a4-4d9e-9341-8657fe056d89",
+        "partitions": [
+          {
+            "name": "DateTableTemplate_61d86e4b-d4a9-4cfd-ba40-21edc81122df",
+            "mode": "import",
+            "source": {
+              "expression": "Calendar(Date(2015,1,1), Date(2015,1,1))",
+              "type": "calculated"
+            }
+          }
+        ]
+      },
+      {
+        "name": "LocalDateTable_7f19aaf2-5c8d-4d14-b4e3-c001cc711ada",
+        "annotations": [
+          {
+            "name": "__PBI_LocalDateTable",
+            "value": "true"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "PaddedDateTableDates",
+            "dataType": "dateTime",
+            "formatString": "General Date",
+            "isHidden": true,
+            "isNameInferred": true,
+            "lineageTag": "40063299-c36e-48f6-8a10-ac29c9be504f",
+            "sourceColumn": "[Date]",
+            "summarizeBy": "none",
+            "type": "calculatedTableColumn"
+          },
+          {
+            "name": "Year",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Year"
+              }
+            ],
+            "dataCategory": "Years",
+            "dataType": "int64",
+            "expression": "YEAR([Date])",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "cce96e9d-4d5a-467a-ba72-7e41165ed556",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "MonthNo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "MonthNumber"
+              }
+            ],
+            "dataCategory": "MonthOfYear",
+            "dataType": "int64",
+            "expression": "MONTH([Date])",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "562484e5-e677-4284-a286-2d82c7d277bc",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Month",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Month"
+              }
+            ],
+            "dataCategory": "Months",
+            "dataType": "string",
+            "expression": "FORMAT([Date], \"MMMM\")",
+            "isHidden": true,
+            "lineageTag": "9bb15da3-ed41-416f-a9ef-db6e5e9a87a6",
+            "sortByColumn": "MonthNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "QuarterNo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "QuarterNumber"
+              }
+            ],
+            "dataCategory": "QuarterOfYear",
+            "dataType": "int64",
+            "expression": "INT(([MonthNo] + 2) / 3)",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "69c8d4d8-7b14-4eea-821c-ab89e2766d24",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Quarter",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Quarter"
+              }
+            ],
+            "dataCategory": "Quarters",
+            "dataType": "string",
+            "expression": "\"Qtr \" & [QuarterNo]",
+            "isHidden": true,
+            "lineageTag": "434ff2e1-538a-4348-a66a-120400f7210a",
+            "sortByColumn": "QuarterNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Day",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Day"
+              }
+            ],
+            "dataCategory": "DayOfMonth",
+            "dataType": "int64",
+            "expression": "DAY([Date])",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "8da6147a-a7cc-4cf2-ac40-a1195f466285",
+            "summarizeBy": "none",
+            "type": "calculated"
+          }
+        ],
+        "hierarchies": [
+          {
+            "name": "Date Hierarchy",
+            "annotations": [
+              {
+                "name": "TemplateId",
+                "value": "DateHierarchy"
+              }
+            ],
+            "levels": [
+              {
+                "name": "Year",
+                "column": "Year",
+                "lineageTag": "f9cbe4ed-f930-4bd1-aa5c-37de5cf49e5c",
+                "ordinal": 0
+              },
+              {
+                "name": "Quarter",
+                "column": "Quarter",
+                "lineageTag": "637cb4da-4a14-43ec-8b29-73cb32dde2b4",
+                "ordinal": 1
+              },
+              {
+                "name": "Month",
+                "column": "Month",
+                "lineageTag": "3cc36057-c6ae-41a7-b641-a3d01a6e2815",
+                "ordinal": 2
+              },
+              {
+                "name": "Day",
+                "column": "Day",
+                "lineageTag": "f7636515-4a71-40b5-8264-ff0a735fdaf7",
+                "ordinal": 3
+              }
+            ],
+            "lineageTag": "56be988b-8b68-4ad9-b683-ab7bddd2ab63"
+          }
+        ],
+        "isHidden": true,
+        "lineageTag": "146db43d-3121-4120-8339-466ced9f2e53",
+        "partitions": [
+          {
+            "name": "LocalDateTable_7f19aaf2-5c8d-4d14-b4e3-c001cc711ada",
+            "mode": "import",
+            "source": {
+              "expression": "Calendar(Date(Year(MIN('Data'[Loan Sanction Date])), 1, 1), Date(Year(MAX('Data'[Loan Sanction Date])), 12, 31))",
+              "type": "calculated"
+            }
+          }
+        ],
+        "showAsVariationsOnly": true
+      },
+      {
+        "name": "All_measures",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "changedProperties": [
+          {
+            "property": "Name"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Column1",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
+            "dataType": "string",
+            "isHidden": true,
+            "lineageTag": "2701cd8e-c176-4ddd-9d06-0b0116ae7352",
+            "sourceColumn": "Column1",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "ecf8c6d1-8613-4684-93b9-5371a3df6a2d",
+        "measures": [
+          {
+            "name": "Total Loans",
+            "expression": "COUNTROWS(Data)",
+            "formatString": "0",
+            "lineageTag": "43575d49-2506-4676-a297-f204b50230f1"
+          },
+          {
+            "name": "Total Loan Amount",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"currencyCulture\":\"en-IN\"}"
+              }
+            ],
+            "expression": "SUM(Data[Loan Amount])",
+            "formatString": "\"₹\"\\ #,0;#,0\\ -\"₹\";\"₹\"\\ #,0",
+            "lineageTag": "bc4f1de6-9188-4b7a-9179-0bd52db1da0a"
+          },
+          {
+            "name": "Avg Ticket",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"currencyCulture\":\"en-IN\"}"
+              }
+            ],
+            "expression": "AVERAGE(Data[Loan Amount])",
+            "formatString": "\"₹\"\\ #,0.00;#,0.00\\ -\"₹\";\"₹\"\\ #,0.00",
+            "lineageTag": "6a4d2c5d-841a-4b26-8de7-9ff2ff3d472c"
+          },
+          {
+            "name": "Salaried %",
+            "expression": "CALCULATE([Total Loans],Data[Type of Employment]==\"Salaried\")/[Total Loans]",
+            "formatString": "#,0.00%;-#,0.00%;#,0.00%",
+            "lineageTag": "ac30af52-ec60-42a7-9893-5d9599ac5e1f"
+          },
+          {
+            "name": "90+ Rate",
+            "expression": [
+              "",
+              "VAR _90dpd = CALCULATE([Total Loan Amount],Data[DPD Band]==\"90\")",
+              "RETURN",
+              "    DIVIDE(_90dpd, [Total Loan Amount])"
+            ],
+            "formatString": "0.00%;-0.00%;0.00%",
+            "lineageTag": "6a40c7a3-b07e-42c7-ae2d-e47455042903"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "All_measures",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText(\"i44FAA==\", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [Column1 = _t]),",
+                "    #\"Changed Type\" = Table.TransformColumnTypes(Source,{{\"Column1\", type text}})",
+                "in",
+                "    #\"Changed Type\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

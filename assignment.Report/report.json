@@ -1,0 +1,608 @@
+{
+  "config": "{\"version\":\"5.50\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY23SU11\",\"version\":\"5.50\",\"type\":2}},\"activeSectionIndex\":7,\"defaultDrillFilterOtherVisuals\":true,\"slowDataSourceSettings\":{\"isCrossHighlightingDisabled\":false,\"isSlicerSelectionsButtonEnabled\":false,\"isFilterSelectionsButtonEnabled\":false,\"isFieldWellButtonEnabled\":false,\"isApplyAllButtonEnabled\":false},\"linguisticSchemaSyncVersion\":2,\"settings\":{\"isPersistentUserStateDisabled\":false,\"hideVisualContainerHeader\":false,\"useStylableVisualContainerHeader\":true,\"exportDataMode\":1,\"useNewFilterPaneExperience\":true,\"optOutNewFilterPaneExperience\":false,\"defaultFilterActionIsDataFilter\":false,\"useCrossReportDrillthrough\":true,\"allowChangeFilterTypes\":true,\"allowInlineExploration\":true,\"disableFilterPaneSearch\":false,\"enableDeveloperMode\":true,\"useEnhancedTooltips\":false,\"useScaledTooltips\":true,\"useDefaultAggregateDisplayName\":true,\"queryLimitOption\":6,\"customMemoryLimit\":\"1048576\",\"customTimeoutLimit\":\"225\"},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}],\"outspacePane\":[{\"properties\":{\"expanded\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "pods": [
+    {
+      "boundSection": "ReportSection8cd5694ea7229cffcc5b",
+      "config": "{}",
+      "name": "Pod"
+    }
+  ],
+  "publicCustomVisuals": [
+    "heatmapF244EA9EE1F34E828A80CF19B41976F8",
+    "histogram42E8DF98F1244DB799B2A8A65DBCB226",
+    "iconpack",
+    "PBI_CV_EB3A4088_75C5_4746_9D8B_255A7B7ECD6D"
+  ],
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY23SU11",
+            "path": "BaseThemes/CY23SU11.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    },
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "icons8-average-645749719050282707.png",
+            "path": "icons8-average-645749719050282707.png",
+            "type": 100
+          },
+          {
+            "name": "icons8-client-management-320814599397667537.png",
+            "path": "icons8-client-management-320814599397667537.png",
+            "type": 100
+          },
+          {
+            "name": "icons8-client-management-329296912937572861.png",
+            "path": "icons8-client-management-329296912937572861.png",
+            "type": 100
+          },
+          {
+            "name": "icons8-home-automation-507306953348256107.png",
+            "path": "icons8-home-automation-507306953348256107.png",
+            "type": 100
+          },
+          {
+            "name": "icons8-receive-euro-648275464329845115.png",
+            "path": "icons8-receive-euro-648275464329845115.png",
+            "type": 100
+          },
+          {
+            "name": "icons8-risk-649905700979013181.png",
+            "path": "icons8-risk-649905700979013181.png",
+            "type": 100
+          },
+          {
+            "name": "icons8-sales-507253316303193453.png",
+            "path": "icons8-sales-507253316303193453.png",
+            "type": 100
+          }
+        ],
+        "name": "RegisteredResources",
+        "type": 1
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{}",
+      "displayName": "Key Metrics",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "ReportSection",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"fdb95c862292b56c007b\",\"layouts\":[{\"id\":0,\"position\":{\"x\":10.092398669459161,\"y\":93.71513050212077,\"z\":0,\"width\":1022.2158080923635,\"height\":108.13284288706244,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"multiRowCard\",\"projections\":{\"Values\":[{\"queryRef\":\"All_measures.Number of Loans\"},{\"queryRef\":\"All_measures.Total Loan Amount\"},{\"queryRef\":\"All_measures.Avg Ticket\"},{\"queryRef\":\"All_measures.Salaried %\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"All_measures\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Total Loans\"},\"Name\":\"All_measures.Number of Loans\",\"NativeReferenceName\":\"Number of Loans\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Total Loan Amount\"},\"Name\":\"All_measures.Total Loan Amount\",\"NativeReferenceName\":\"Total Loan Amount\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Avg Ticket\"},\"Name\":\"All_measures.Avg Ticket\",\"NativeReferenceName\":\"Avg Ticket\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Salaried %\"},\"Name\":\"All_measures.Salaried %\",\"NativeReferenceName\":\"Salaried %\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Total Loans\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 108.13,
+          "width": 1022.22,
+          "x": 10.09,
+          "y": 93.72,
+          "z": 0.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "Heat map",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "ReportSection142997e4d89ad5725c32",
+      "ordinal": 5,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"6858c138dd6a31ae0d96\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"z\":0,\"width\":1279.8641765704585,\"height\":720,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"heatmapF244EA9EE1F34E828A80CF19B41976F8\",\"projections\":{\"location\":[{\"queryRef\":\"Data.State\"}],\"group\":[{\"queryRef\":\"Data.Pincode\"}],\"value\":[{\"queryRef\":\"All_measures.90+ Rate\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"Data\",\"Type\":0},{\"Name\":\"a\",\"Entity\":\"All_measures\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"State\"},\"Name\":\"Data.State\",\"NativeReferenceName\":\"State\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Pincode\"},\"Name\":\"Data.Pincode\",\"NativeReferenceName\":\"Pincode\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"90+ Rate\"},\"Name\":\"All_measures.90+ Rate\",\"NativeReferenceName\":\"90+ Rate\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"90+ Rate\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"persist\":[{\"properties\":{\"map\":{\"expr\":{\"Literal\":{\"Value\":\"'1706690548364[{\\\"latitude\\\":23.220340285064523,\\\"longitude\\\":79.45517264437957,\\\"altitude\\\":0,\\\"altitudeReference\\\":-1},5]'\"}}},\"locations\":{\"expr\":{\"Literal\":{\"Value\":\"'1706690517880{\\\"ANDHRA PRADESH\\\":{\\\"latitude\\\":15.75551891,\\\"longitude\\\":79.96541595,\\\"type\\\":\\\"AdminDivision1\\\",\\\"name\\\":\\\"Andhra Pradesh\\\",\\\"address\\\":\\\"ANDHRA PRADESH\\\"},\\\"CHANDIGARH\\\":{\\\"latitude\\\":30.73335075,\\\"longitude\\\":76.77903748,\\\"type\\\":\\\"PopulatedPlace\\\",\\\"name\\\":\\\"Chandigarh, India\\\",\\\"address\\\":\\\"CHANDIGARH\\\"},\\\"CHHATTISGARH\\\":{\\\"latitude\\\":21.26684952,\\\"longitude\\\":82.04127502,\\\"type\\\":\\\"AdminDivision1\\\",\\\"name\\\":\\\"Chhattisgarh\\\",\\\"address\\\":\\\"CHHATTISGARH\\\"},\\\"DELHI\\\":{\\\"latitude\\\":28.64339066,\\\"longitude\\\":77.11547852,\\\"type\\\":\\\"AdminDivision1\\\",\\\"name\\\":\\\"Delhi\\\",\\\"address\\\":\\\"DELHI\\\"},\\\"DADRA AND NAGAR HAVELI\\\":{\\\"latitude\\\":20.27000046,\\\"longitude\\\":73.01999664,\\\"type\\\":\\\"AdminDivision1\\\",\\\"name\\\":\\\"Dadra and Nagar Haveli\\\",\\\"address\\\":\\\"DADRA AND NAGAR HAVELI\\\"},\\\"GUJARAT\\\":{\\\"latitude\\\":22.6926918,\\\"longitude\\\":71.59703827,\\\"type\\\":\\\"AdminDivision1\\\",\\\"name\\\":\\\"Gujarat\\\",\\\"address\\\":\\\"GUJARAT\\\"},\\\"HARYANA\\\":{\\\"latitude\\\":29.1981945,\\\"longitude\\\":76.34024048,\\\"type\\\":\\\"AdminDivision1\\\",\\\"name\\\":\\\"Haryana\\\",\\\"address\\\":\\\"HARYANA\\\"},\\\"JHARKHAND\\\":{\\\"latitude\\\":23.65612984,\\\"longitude\\\":85.56413269,\\\"type\\\":\\\"AdminDivision1\\\",\\\"name\\\":\\\"Jharkhand\\\",\\\"address\\\":\\\"JHARKHAND\\\"},\\\"KARNATAKA\\\":{\\\"latitude\\\":14.71042442,\\\"longitude\\\":76.16791534,\\\"type\\\":\\\"AdminDivision1\\\",\\\"name\\\":\\\"Karnataka\\\",\\\"address\\\":\\\"KARNATAKA\\\"},\\\"KERALA\\\":{\\\"latitude\\\":10.44991112,\\\"longitude\\\":76.40826416,\\\"type\\\":\\\"AdminDivision1\\\",\\\"name\\\":\\\"Kerala\\\",\\\"address\\\":\\\"KERALA\\\"},\\\"MADHYA PRADESH\\\":{\\\"latitude\\\":23.53817558,\\\"longitude\\\":78.28896332,\\\"type\\\":\\\"AdminDivision1\\\",\\\"name\\\":\\\"Madhya Pradesh\\\",\\\"address\\\":\\\"MADHYA PRADESH\\\"},\\\"MAHARASHTRA\\\":{\\\"latitude\\\":19.45208549,\\\"longitude\\\":76.10894012,\\\"type\\\":\\\"AdminDivision1\\\",\\\"name\\\":\\\"Maharashtra\\\",\\\"address\\\":\\\"MAHARASHTRA\\\"},\\\"ODISHA\\\":{\\\"latitude\\\":20.51304436,\\\"longitude\\\":84.42854309,\\\"type\\\":\\\"AdminDivision1\\\",\\\"name\\\":\\\"Odisha\\\",\\\"address\\\":\\\"ODISHA\\\"},\\\"PUNJAB\\\":{\\\"latitude\\\":30.84214592,\\\"longitude\\\":75.41682434,\\\"type\\\":\\\"AdminDivision1\\\",\\\"name\\\":\\\"Punjab\\\",\\\"address\\\":\\\"PUNJAB\\\"},\\\"RAJASTHAN\\\":{\\\"latitude\\\":26.58432388,\\\"longitude\\\":73.85012817,\\\"type\\\":\\\"AdminDivision1\\\",\\\"name\\\":\\\"Rajasthan\\\",\\\"address\\\":\\\"RAJASTHAN\\\"},\\\"TAMIL NADU\\\":{\\\"latitude\\\":11.01610088,\\\"longitude\\\":78.40702057,\\\"type\\\":\\\"AdminDivision1\\\",\\\"name\\\":\\\"Tamil Nadu\\\",\\\"address\\\":\\\"TAMIL NADU\\\"},\\\"TELANGANA\\\":{\\\"latitude\\\":17.80065918,\\\"longitude\\\":79.00984955,\\\"type\\\":\\\"AdminDivision1\\\",\\\"name\\\":\\\"Telangana\\\",\\\"address\\\":\\\"TELANGANA\\\"},\\\"UTTAR PRADESH\\\":{\\\"latitude\\\":26.9235611,\\\"longitude\\\":80.56635284,\\\"type\\\":\\\"AdminDivision1\\\",\\\"name\\\":\\\"Uttar Pradesh\\\",\\\"address\\\":\\\"UTTAR PRADESH\\\"},\\\"UTTARAKHAND\\\":{\\\"latitude\\\":30.13202667,\\\"longitude\\\":79.20533752,\\\"type\\\":\\\"AdminDivision1\\\",\\\"name\\\":\\\"Uttarakhand\\\",\\\"address\\\":\\\"UTTARAKHAND\\\"},\\\"WEST BENGAL\\\":{\\\"latitude\\\":23.85415077,\\\"longitude\\\":87.9726944,\\\"type\\\":\\\"AdminDivision1\\\",\\\"name\\\":\\\"West Bengal\\\",\\\"address\\\":\\\"WEST BENGAL\\\"},\\\"HIMACHAL PRADESH\\\":{\\\"latitude\\\":31.92356682,\\\"longitude\\\":77.23621368,\\\"type\\\":\\\"AdminDivision1\\\",\\\"name\\\":\\\"Himachal Pradesh\\\",\\\"address\\\":\\\"HIMACHAL PRADESH\\\"}}'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 720.00,
+          "width": 1279.86,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 0.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "Map",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "ReportSection4386b050c5f4473afbd1",
+      "ordinal": 3,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"5fe209794ab1a1f33df3\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"z\":0,\"width\":1280,\"height\":720,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"map\",\"projections\":{\"Category\":[{\"queryRef\":\"Data.Pincode\",\"active\":true}],\"Size\":[{\"queryRef\":\"All_measures.Total Loan Amount\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"Data\",\"Type\":0},{\"Name\":\"a\",\"Entity\":\"All_measures\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Pincode\"},\"Name\":\"Data.Pincode\",\"NativeReferenceName\":\"Pincode\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Total Loan Amount\"},\"Name\":\"All_measures.Total Loan Amount\",\"NativeReferenceName\":\"Total Loan Amount\"}]},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 720.00,
+          "width": 1280.00,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 0.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{\"objects\":{\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#E3E997'\"}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"50D\"}}}}}],\"displayArea\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Middle'\"}}}}}]},\"type\":1}",
+      "displayName": "Tooltips",
+      "displayOption": 3,
+      "filters": "[]",
+      "height": 240.00,
+      "name": "ReportSection72be0d4e3832aca062ad",
+      "ordinal": 1,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"1e582be3f13cbb6ec31e\",\"layouts\":[{\"id\":0,\"position\":{\"x\":19.047619047619065,\"y\":37.14285714285714,\"z\":0,\"width\":281.90476190476187,\"height\":150,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'rectangleRounded'\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}],\"fill\":[{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}},\"selector\":{\"id\":\"default\"}}],\"outline\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 150.00,
+          "width": 281.90,
+          "x": 19.05,
+          "y": 37.14,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"28ccd3c0d936d4a4694a\",\"layouts\":[{\"id\":0,\"position\":{\"x\":19.047619047619047,\"y\":89.04761904761904,\"z\":1500,\"width\":281.90476190476187,\"height\":46.666666666666664,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Click on Region to see States and then Branches\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontSize\":\"13.3333px\",\"color\":\"#12239e\"}}],\"horizontalTextAlignment\":\"center\"}]}}]}}}",
+          "filters": "[]",
+          "height": 46.67,
+          "width": 281.90,
+          "x": 19.05,
+          "y": 89.05,
+          "z": 1500.00
+        }
+      ],
+      "width": 320.00
+    },
+    {
+      "config": "{}",
+      "displayName": "LenderView",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "ReportSection8cd5694ea7229cffcc5b",
+      "ordinal": 4,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"1350783deee3a8d16498\",\"layouts\":[{\"id\":0,\"position\":{\"x\":980.0000000000001,\"y\":0,\"z\":1000,\"width\":300,\"height\":140,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"Data.Loan Sanction Date.Variation.Date Hierarchy.Day\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"Data\",\"Type\":0}],\"Select\":[{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Name\":\"Variation\",\"Property\":\"Loan Sanction Date\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Day\"},\"Name\":\"Data.Loan Sanction Date.Variation.Date Hierarchy.Day\",\"NativeReferenceName\":\"Loan Sanction Date Day\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Name\":\"Variation\",\"Property\":\"Loan Sanction Date\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Day\"}}}]},\"syncGroup\":{\"groupName\":\"Day\",\"fieldChanges\":true,\"filterChanges\":true},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"selection\":[{\"properties\":{\"selectAllCheckboxEnabled\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"singleSelect\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"strictSingleSelect\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Between'\"}}}}}],\"general\":[{\"properties\":{}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"visualHeader\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 140.00,
+          "width": 300.00,
+          "x": 980.00,
+          "y": 0.00,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"3d9daf216bb5fb219cc1\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"z\":0,\"width\":961.4285714285714,\"height\":224.2857142857143,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"pivotTable\",\"projections\":{\"Rows\":[{\"queryRef\":\"Data.Lender\",\"active\":true}],\"Values\":[{\"queryRef\":\"All_measures.Number of Loans\"},{\"queryRef\":\"All_measures.Total Loan Amount\"}],\"Columns\":[{\"queryRef\":\"Data.Loan Sanction Date.Variation.Date Hierarchy.Month\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"Data\",\"Type\":0},{\"Name\":\"a\",\"Entity\":\"All_measures\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Lender\"},\"Name\":\"Data.Lender\",\"NativeReferenceName\":\"Lender\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Total Loans\"},\"Name\":\"All_measures.Number of Loans\",\"NativeReferenceName\":\"Number of Loans\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Total Loan Amount\"},\"Name\":\"All_measures.Total Loan Amount\",\"NativeReferenceName\":\"Total Loan Amount\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Name\":\"Variation\",\"Property\":\"Loan Sanction Date\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Month\"},\"Name\":\"Data.Loan Sanction Date.Variation.Date Hierarchy.Month\",\"NativeReferenceName\":\"Loan Sanction Date Month\"}]},\"expansionStates\":[{\"roles\":[\"Rows\"],\"levels\":[{\"queryRefs\":[\"Data.Lender\"],\"isCollapsed\":true,\"identityKeys\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Data\"}},\"Property\":\"Lender\"}}],\"isPinned\":true}],\"root\":{\"identityValues\":null}}],\"drillFilterOtherVisuals\":true,\"objects\":{\"rowHeaders\":[{\"properties\":{}}]}}}",
+          "filters": "[]",
+          "height": 224.29,
+          "width": 961.43,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 0.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{\"objects\":{\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":-0.2}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"50D\"}}}}}]},\"filterSortOrder\":3}",
+      "displayName": "Sales Dashboard",
+      "displayOption": 1,
+      "filters": "[{\"name\":\"Filterb688038331b4aad75cd5\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Data\"}},\"Property\":\"Lender\"}},\"type\":\"Categorical\",\"howCreated\":1,\"ordinal\":0},{\"name\":\"Filter20ae435793639e970cbd\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Data\"}},\"Property\":\"Region\"}},\"type\":\"Categorical\",\"howCreated\":1,\"ordinal\":1},{\"name\":\"Filter3fbe8b7a60ed53344d68\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Data\"}},\"Property\":\"Loan Band\"}},\"type\":\"Categorical\",\"howCreated\":1,\"ordinal\":2},{\"name\":\"Filter16f51a292bfc79f9a26c\",\"expression\":{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Data\"}},\"Name\":\"Variation\",\"Property\":\"Loan Sanction Date\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Month\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"l\",\"Entity\":\"LocalDateTable_7f19aaf2-5c8d-4d14-b4e3-c001cc711ada\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"l\"}},\"Property\":\"Month\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'May'\"}}]]}}}]},\"type\":\"Categorical\",\"cachedDisplayNames\":[{\"id\":{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"LocalDateTable_7f19aaf2-5c8d-4d14-b4e3-c001cc711ada\"}},\"Property\":\"Month\"}},\"Right\":{\"Literal\":{\"Value\":\"'May'\"}}}}},\"displayName\":\"May\"}],\"howCreated\":1,\"objects\":{},\"ordinal\":3},{\"name\":\"Filter9afa49c0d7830a7492ba\",\"expression\":{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Data\"}},\"Name\":\"Variation\",\"Property\":\"Loan Sanction Date\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Year\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"l\",\"Entity\":\"LocalDateTable_7f19aaf2-5c8d-4d14-b4e3-c001cc711ada\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"l\"}},\"Property\":\"Year\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"2023L\"}}]]}}}]},\"type\":\"Categorical\",\"cachedDisplayNames\":[{\"id\":{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"LocalDateTable_7f19aaf2-5c8d-4d14-b4e3-c001cc711ada\"}},\"Property\":\"Year\"}},\"Right\":{\"Literal\":{\"Value\":\"2023L\"}}}}},\"displayName\":\"2023\"}],\"howCreated\":1,\"objects\":{},\"ordinal\":4}]",
+      "height": 720.00,
+      "name": "ReportSectiona054a493b83cec33093c",
+      "ordinal": 6,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"15c4310e9b7814764ebb\",\"layouts\":[{\"id\":0,\"position\":{\"x\":74.23599320882853,\"y\":0,\"z\":9001,\"width\":42.78438030560272,\"height\":37.89473684210527,\"tabOrder\":9001}}],\"singleVisual\":{\"visualType\":\"image\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"imageUrl\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"icons8-home-automation-507306953348256107.png\"}}}}}]}},\"parentGroupName\":\"3e2fb602a5ac1d0ede1d\",\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 37.89,
+          "width": 42.78,
+          "x": 74.24,
+          "y": 0.00,
+          "z": 9001.00
+        },
+        {
+          "config": "{\"name\":\"2253c1349c3ddb5256e3\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0.4881154499151137,\"z\":0,\"width\":190,\"height\":152.5,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"cardVisual\",\"projections\":{\"Data\":[{\"queryRef\":\"All_measures.Number of Loans\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"All_measures\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Total Loans\"},\"Name\":\"All_measures.Number of Loans\",\"NativeReferenceName\":\"Total Loans\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Total Loans\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"fillCustom\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"outline\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}},\"selector\":{\"id\":\"default\"}}],\"value\":[{\"properties\":{\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"horizontalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"labelDisplayUnits\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"30D\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":-0.6}}}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'wf_standard-font, helvetica, arial, sans-serif'\"}}}},\"selector\":{\"id\":\"default\"}}],\"padding\":[{\"properties\":{\"paddingSelection\":{\"expr\":{\"Literal\":{\"Value\":\"'Normal'\"}}}},\"selector\":{\"id\":\"default\"}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Total Loans'\"}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"titleWrap\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}]}},\"parentGroupName\":\"3e2fb602a5ac1d0ede1d\"}",
+          "filters": "[]",
+          "height": 152.50,
+          "width": 190.00,
+          "x": 0.00,
+          "y": 0.49,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"3e2fb602a5ac1d0ede1d\",\"layouts\":[{\"id\":0,\"position\":{\"height\":152.9881154499151,\"width\":190,\"x\":1.25,\"y\":68.77858080965372,\"z\":7000,\"tabOrder\":5000}}],\"singleVisualGroup\":{\"displayName\":\"Group 3\",\"groupMode\":0},\"parentGroupName\":\"c3f79f0307a7029fc89b\"}",
+          "height": 152.99,
+          "width": 190.00,
+          "x": 1.25,
+          "y": 68.78,
+          "z": 7000.00
+        },
+        {
+          "config": "{\"name\":\"3fe59a5c988d5d7a9a75\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1.25,\"y\":234.26669625956885,\"z\":0,\"width\":436.25,\"height\":268.75,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"lineStackedColumnComboChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Data.Loan Band\",\"active\":true}],\"Y\":[{\"queryRef\":\"All_measures.Total Loan Amount\"}],\"Y2\":[{\"queryRef\":\"Divide(All_measures.Total Loan Amount, ScopedEval(All_measures.Total Loan Amount, []))\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"Data\",\"Type\":0},{\"Name\":\"a\",\"Entity\":\"All_measures\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Loan Band\"},\"Name\":\"Data.Loan Band\",\"NativeReferenceName\":\"Loan Band\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Total Loan Amount\"},\"Name\":\"All_measures.Total Loan Amount\",\"NativeReferenceName\":\"Total Loan Amount\"},{\"Arithmetic\":{\"Left\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Total Loan Amount\"}},\"Right\":{\"ScopedEval\":{\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Total Loan Amount\"}},\"Scope\":[]}},\"Operator\":3},\"Name\":\"Divide(All_measures.Total Loan Amount, ScopedEval(All_measures.Total Loan Amount, []))\",\"NativeReferenceName\":\"%GT Total Loan Amount\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Loan Band\"}}}]},\"columnProperties\":{\"Divide(All_measures.Total Loan Amount, ScopedEval(All_measures.Total Loan Amount, []))\":{\"displayName\":\"% Share\"}},\"drillFilterOtherVisuals\":true,\"objects\":{\"legend\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"position\":{\"expr\":{\"Literal\":{\"Value\":\"'TopCenter'\"}}}}}],\"categoryAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"valueAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"' Loan Band wise Amount n % Share'\"}}},\"titleWrap\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'left'\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"visualTooltip\":[{\"properties\":{\"section\":{\"expr\":{\"Literal\":{\"Value\":\"'ReportSection72be0d4e3832aca062ad'\"}}},\"type\":{\"expr\":{\"Literal\":{\"Value\":\"'Default'\"}}}}}]}},\"parentGroupName\":\"c3f79f0307a7029fc89b\"}",
+          "filters": "[]",
+          "height": 268.75,
+          "width": 436.25,
+          "x": 1.25,
+          "y": 234.27,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"44af89157d45435f23c9\",\"layouts\":[{\"id\":0,\"position\":{\"x\":95.4095925297114,\"y\":0,\"z\":9003,\"width\":41.56196943972835,\"height\":41.56196943972835,\"tabOrder\":9002}}],\"singleVisual\":{\"visualType\":\"image\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"imageUrl\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"icons8-average-645749719050282707.png\"}}}}}]}},\"parentGroupName\":\"d39836455f7223c6f26d\",\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 41.56,
+          "width": 41.56,
+          "x": 95.41,
+          "y": 0.00,
+          "z": 9003.00
+        },
+        {
+          "config": "{\"name\":\"47871152ac31e5e40221\",\"layouts\":[{\"id\":0,\"position\":{\"height\":156.6553480475382,\"width\":220,\"x\":453.75,\"y\":65.11134821203063,\"z\":5000,\"tabOrder\":7000}}],\"singleVisualGroup\":{\"displayName\":\"Group 1\",\"groupMode\":0},\"parentGroupName\":\"c3f79f0307a7029fc89b\"}",
+          "height": 156.66,
+          "width": 220.00,
+          "x": 453.75,
+          "y": 65.11,
+          "z": 5000.00
+        },
+        {
+          "config": "{\"name\":\"69d9345aa4371ee62e3a\",\"layouts\":[{\"id\":0,\"position\":{\"x\":85.02971137521229,\"y\":0,\"z\":9006,\"width\":48.89643463497453,\"height\":41.56196943972835,\"tabOrder\":9003}}],\"singleVisual\":{\"visualType\":\"image\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"imageUrl\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"icons8-receive-euro-648275464329845115.png\"}}}}}]}},\"parentGroupName\":\"47871152ac31e5e40221\",\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 41.56,
+          "width": 48.90,
+          "x": 85.03,
+          "y": 0.00,
+          "z": 9006.00
+        },
+        {
+          "config": "{\"name\":\"76eb220f923dd81330c2\",\"layouts\":[{\"id\":0,\"position\":{\"x\":902.8125,\"y\":67.20837032446104,\"z\":9000,\"width\":355,\"height\":283.75,\"tabOrder\":9000}}],\"singleVisual\":{\"visualType\":\"pieChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Data.Lender\",\"active\":true}],\"Y\":[{\"queryRef\":\"All_measures.Total Loan Amount\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"Data\",\"Type\":0},{\"Name\":\"a\",\"Entity\":\"All_measures\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Lender\"},\"Name\":\"Data.Lender\",\"NativeReferenceName\":\"Lender\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Total Loan Amount\"},\"Name\":\"All_measures.Total Loan Amount\",\"NativeReferenceName\":\"Total Loan Amount\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Total Loan Amount\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"position\":{\"expr\":{\"Literal\":{\"Value\":\"'preferOutside'\"}}},\"overflow\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"legend\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"position\":{\"expr\":{\"Literal\":{\"Value\":\"'TopCenter'\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"titleWrap\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}}}}],\"visualTooltip\":[{\"properties\":{\"section\":{\"expr\":{\"Literal\":{\"Value\":\"'ReportSection72be0d4e3832aca062ad'\"}}}}}]}},\"parentGroupName\":\"c3f79f0307a7029fc89b\"}",
+          "filters": "[]",
+          "height": 283.75,
+          "width": 355.00,
+          "x": 902.81,
+          "y": 67.21,
+          "z": 9000.00
+        },
+        {
+          "config": "{\"name\":\"875aa960a711604d4787\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0.4881154499151137,\"z\":1000,\"width\":232.5,\"height\":152.5,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"cardVisual\",\"projections\":{\"Data\":[{\"queryRef\":\"All_measures.Avg Ticket\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"All_measures\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Avg Ticket\"},\"Name\":\"All_measures.Avg Ticket\",\"NativeReferenceName\":\"Avg Ticket\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Avg Ticket\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"value\":[{\"properties\":{\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"horizontalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"30D\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":-0.6}}}}}},\"selector\":{\"id\":\"default\"}}],\"shapeCustomRectangle\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'rectangle'\"}}}},\"selector\":{\"id\":\"default\"}}],\"fillCustom\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"outline\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}},\"selector\":{\"id\":\"default\"}}],\"padding\":[{\"properties\":{\"paddingSelection\":{\"expr\":{\"Literal\":{\"Value\":\"'Normal'\"}}}},\"selector\":{\"id\":\"default\"}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Avg Ticket'\"}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"titleWrap\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}]}},\"parentGroupName\":\"d39836455f7223c6f26d\"}",
+          "filters": "[]",
+          "height": 152.50,
+          "width": 232.50,
+          "x": 0.00,
+          "y": 0.49,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"8cc12067071452e6553c\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0.5166962595688371,\"z\":5000,\"width\":1257.5,\"height\":68.75,\"tabOrder\":5000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Sales Dashboard \",\"textStyle\":{\"fontWeight\":\"bold\",\"fontSize\":\"28pt\",\"color\":\"#1a1a1a\"}}]}]}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}},\"parentGroupName\":\"981c82bfad77dbef6bdf\"}",
+          "filters": "[]",
+          "height": 68.75,
+          "width": 1257.50,
+          "x": 0.00,
+          "y": 0.52,
+          "z": 5000.00
+        },
+        {
+          "config": "{\"name\":\"8d54d3c8b9dc42d01845\",\"layouts\":[{\"id\":0,\"position\":{\"x\":301.8599767165279,\"y\":0,\"z\":9001,\"width\":78.21638553409605,\"height\":63.121995343305585,\"tabOrder\":9004}}],\"singleVisual\":{\"visualType\":\"image\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"imageUrl\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"icons8-sales-507253316303193453.png\"}}}}}]}},\"parentGroupName\":\"981c82bfad77dbef6bdf\",\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 63.12,
+          "width": 78.22,
+          "x": 301.86,
+          "y": 0.00,
+          "z": 9001.00
+        },
+        {
+          "config": "{\"name\":\"981c82bfad77dbef6bdf\",\"layouts\":[{\"id\":0,\"position\":{\"height\":69.26669625956883,\"width\":1257.5,\"x\":0,\"y\":0,\"z\":8000,\"tabOrder\":8000}}],\"singleVisualGroup\":{\"displayName\":\"Group 4\",\"groupMode\":0},\"parentGroupName\":\"c3f79f0307a7029fc89b\"}",
+          "height": 69.27,
+          "width": 1257.50,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 8000.00
+        },
+        {
+          "config": "{\"name\":\"aa116e093f9c9d3283f2\",\"layouts\":[{\"id\":0,\"position\":{\"x\":906.5625,\"y\":367.20837032446104,\"z\":4000,\"width\":351.25,\"height\":333.75,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"map\",\"projections\":{\"Category\":[{\"queryRef\":\"Data.State\",\"active\":true},{\"queryRef\":\"Data.Pincode\"}],\"Size\":[{\"queryRef\":\"All_measures.Total Loan Amount\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"Data\",\"Type\":0},{\"Name\":\"a\",\"Entity\":\"All_measures\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Pincode\"},\"Name\":\"Data.Pincode\",\"NativeReferenceName\":\"Pincode\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Total Loan Amount\"},\"Name\":\"All_measures.Total Loan Amount\",\"NativeReferenceName\":\"Total Loan Amount\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"State\"},\"Name\":\"Data.State\",\"NativeReferenceName\":\"State\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"legend\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"position\":{\"expr\":{\"Literal\":{\"Value\":\"'TopCenter'\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"titleWrap\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}}}}],\"visualTooltip\":[{\"properties\":{\"section\":{\"expr\":{\"Literal\":{\"Value\":\"'ReportSection72be0d4e3832aca062ad'\"}}}}}]}},\"parentGroupName\":\"c3f79f0307a7029fc89b\"}",
+          "filters": "[]",
+          "height": 333.75,
+          "width": 351.25,
+          "x": 906.56,
+          "y": 367.21,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"c3f79f0307a7029fc89b\",\"layouts\":[{\"id\":0,\"position\":{\"height\":701.2030352267208,\"width\":1257.8125,\"x\":13.75,\"y\":8.233303740431163,\"z\":9004,\"tabOrder\":9006}}],\"singleVisualGroup\":{\"displayName\":\"Group 5\",\"groupMode\":0}}",
+          "height": 701.20,
+          "width": 1257.81,
+          "x": 13.75,
+          "y": 8.23,
+          "z": 9004.00
+        },
+        {
+          "config": "{\"name\":\"ce946a68c52b85bf8d4e\",\"layouts\":[{\"id\":0,\"position\":{\"x\":454.17609591450446,\"y\":234.64915660228817,\"z\":1000,\"width\":433.62066366270795,\"height\":268.95458885408465,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"lineStackedColumnComboChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Data.Region\",\"active\":true},{\"queryRef\":\"Data.State\"},{\"queryRef\":\"Data.BRANCHNAME\"}],\"Y\":[{\"queryRef\":\"All_measures.Total Loan Amount\"}],\"Y2\":[{\"queryRef\":\"Divide(All_measures.Total Loan Amount, ScopedEval(All_measures.Total Loan Amount, []))\"}],\"Series\":[{\"queryRef\":\"Data.Region\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"Data\",\"Type\":0},{\"Name\":\"a\",\"Entity\":\"All_measures\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Total Loan Amount\"},\"Name\":\"All_measures.Total Loan Amount\",\"NativeReferenceName\":\"Total Loan Amount\"},{\"Arithmetic\":{\"Left\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Total Loan Amount\"}},\"Right\":{\"ScopedEval\":{\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Total Loan Amount\"}},\"Scope\":[]}},\"Operator\":3},\"Name\":\"Divide(All_measures.Total Loan Amount, ScopedEval(All_measures.Total Loan Amount, []))\",\"NativeReferenceName\":\"%GT Total Loan Amount\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Region\"},\"Name\":\"Data.Region\",\"NativeReferenceName\":\"Region\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"State\"},\"Name\":\"Data.State\",\"NativeReferenceName\":\"State\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Branch\"},\"Name\":\"Data.BRANCHNAME\",\"NativeReferenceName\":\"BRANCHNAME\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Region\"}}},{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"State\"}}},{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Branch\"}}}]},\"columnProperties\":{\"Divide(All_measures.Total Loan Amount, ScopedEval(All_measures.Total Loan Amount, []))\":{\"displayName\":\"% Share\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"legend\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"position\":{\"expr\":{\"Literal\":{\"Value\":\"'TopCenter'\"}}}}}],\"categoryAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"valueAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"titleWrap\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'left'\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Region wise Amount n % Share'\"}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"visualTooltip\":[{\"properties\":{\"section\":{\"expr\":{\"Literal\":{\"Value\":\"'ReportSection72be0d4e3832aca062ad'\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}}}]}},\"parentGroupName\":\"c3f79f0307a7029fc89b\"}",
+          "filters": "[]",
+          "height": 268.95,
+          "width": 433.62,
+          "x": 454.18,
+          "y": 234.65,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"d39836455f7223c6f26d\",\"layouts\":[{\"id\":0,\"position\":{\"height\":152.9881154499151,\"width\":232.5,\"x\":205,\"y\":68.77858080965372,\"z\":6000,\"tabOrder\":6000}}],\"singleVisualGroup\":{\"displayName\":\"Group 2\",\"groupMode\":0},\"parentGroupName\":\"c3f79f0307a7029fc89b\"}",
+          "height": 152.99,
+          "width": 232.50,
+          "x": 205.00,
+          "y": 68.78,
+          "z": 6000.00
+        },
+        {
+          "config": "{\"name\":\"d43da01312e6c1aba9d9\",\"layouts\":[{\"id\":0,\"position\":{\"x\":690.1974698068644,\"y\":68.61086450359302,\"z\":3000,\"width\":197.59928977034792,\"height\":153.68833648804838,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"Data.Loan Sanction Date.Variation.Date Hierarchy.Day\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"Data\",\"Type\":0}],\"Select\":[{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Name\":\"Variation\",\"Property\":\"Loan Sanction Date\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Day\"},\"Name\":\"Data.Loan Sanction Date.Variation.Date Hierarchy.Day\",\"NativeReferenceName\":\"Loan Sanction Date Day\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Name\":\"Variation\",\"Property\":\"Loan Sanction Date\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Day\"}}}]},\"syncGroup\":{\"groupName\":\"Day\",\"fieldChanges\":true,\"filterChanges\":true},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"selection\":[{\"properties\":{\"selectAllCheckboxEnabled\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"singleSelect\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"strictSingleSelect\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Between'\"}}}}}],\"general\":[{\"properties\":{}}],\"header\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"numericInputStyle\":[{\"properties\":{\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'wf_standard-font, helvetica, arial, sans-serif'\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"textSize\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Date Range'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":-0.6}}}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"12D\"}}}}}],\"visualHeader\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}}}]}},\"parentGroupName\":\"c3f79f0307a7029fc89b\"}",
+          "filters": "[]",
+          "height": 153.69,
+          "width": 197.60,
+          "x": 690.20,
+          "y": 68.61,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"d62d6f86978714927588\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1.3443901907904667,\"y\":514.5814837769477,\"z\":2000,\"width\":886.452369386422,\"height\":186.62155144977305,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"pivotTable\",\"projections\":{\"Rows\":[{\"queryRef\":\"Data.Lender\",\"active\":true}],\"Values\":[{\"queryRef\":\"All_measures.Number of Loans\"},{\"queryRef\":\"All_measures.Total Loan Amount\"}],\"Columns\":[{\"queryRef\":\"Data.Loan Sanction Date.Variation.Date Hierarchy.Month\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"Data\",\"Type\":0},{\"Name\":\"a\",\"Entity\":\"All_measures\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Lender\"},\"Name\":\"Data.Lender\",\"NativeReferenceName\":\"Lender\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Total Loans\"},\"Name\":\"All_measures.Number of Loans\",\"NativeReferenceName\":\"Total Loans\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Total Loan Amount\"},\"Name\":\"All_measures.Total Loan Amount\",\"NativeReferenceName\":\"Total Loan Amount\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Name\":\"Variation\",\"Property\":\"Loan Sanction Date\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Month\"},\"Name\":\"Data.Loan Sanction Date.Variation.Date Hierarchy.Month\",\"NativeReferenceName\":\"Loan Sanction Date Month\"}]},\"expansionStates\":[{\"roles\":[\"Rows\"],\"levels\":[{\"queryRefs\":[\"Data.Lender\"],\"isCollapsed\":true,\"identityKeys\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Data\"}},\"Property\":\"Lender\"}}],\"isPinned\":true}],\"root\":{\"identityValues\":null}}],\"drillFilterOtherVisuals\":true,\"objects\":{\"rowHeaders\":[{\"properties\":{}}],\"subTotals\":[{\"properties\":{\"columnSubtotals\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"rowSubtotals\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"vcObjects\":{\"stylePreset\":[{\"properties\":{\"name\":{\"expr\":{\"Literal\":{\"Value\":\"'Default'\"}}}}}],\"general\":[{\"properties\":{\"keepLayerOrder\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}},\"parentGroupName\":\"c3f79f0307a7029fc89b\"}",
+          "filters": "[]",
+          "height": 186.62,
+          "width": 886.45,
+          "x": 1.34,
+          "y": 514.58,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"e4d22dcfb507c5afe893\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":4.155348047538197,\"z\":2000,\"width\":220,\"height\":152.5,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"cardVisual\",\"projections\":{\"Data\":[{\"queryRef\":\"All_measures.Salaried %\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"All_measures\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Salaried %\"},\"Name\":\"All_measures.Salaried %\",\"NativeReferenceName\":\"Salaried %\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Salaried %\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"value\":[{\"properties\":{\"horizontalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"30D\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":-0.6}}}}}},\"selector\":{\"id\":\"default\"}}],\"padding\":[{\"properties\":{\"paddingSelection\":{\"expr\":{\"Literal\":{\"Value\":\"'Normal'\"}}}},\"selector\":{\"id\":\"default\"}}],\"fillCustom\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"outline\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}},\"selector\":{\"id\":\"default\"}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Salaried %'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}}}}]}},\"parentGroupName\":\"47871152ac31e5e40221\"}",
+          "filters": "[]",
+          "height": 152.50,
+          "width": 220.00,
+          "x": 0.00,
+          "y": 4.16,
+          "z": 2000.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{\"objects\":{\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#BFAFAF'\"}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"50D\"}}}}}]},\"filterSortOrder\":3}",
+      "displayName": "Risk Dashboard",
+      "displayOption": 1,
+      "filters": "[{\"name\":\"Filterb688038331b4aad75cd5\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Data\"}},\"Property\":\"Lender\"}},\"type\":\"Categorical\",\"howCreated\":1,\"ordinal\":0},{\"name\":\"Filter20ae435793639e970cbd\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Data\"}},\"Property\":\"Region\"}},\"type\":\"Categorical\",\"howCreated\":1,\"ordinal\":1},{\"name\":\"Filter3fbe8b7a60ed53344d68\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Data\"}},\"Property\":\"Loan Band\"}},\"type\":\"Categorical\",\"howCreated\":1,\"ordinal\":2},{\"name\":\"Filterf213728039eee36da96d\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Data\"}},\"Property\":\"DPD Band\"}},\"type\":\"Categorical\",\"howCreated\":1,\"ordinal\":3},{\"name\":\"Filterfbe76f5ea32afebb36ac\",\"expression\":{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Data\"}},\"Name\":\"Variation\",\"Property\":\"Loan Sanction Date\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Year\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"l\",\"Entity\":\"LocalDateTable_7f19aaf2-5c8d-4d14-b4e3-c001cc711ada\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"l\"}},\"Property\":\"Year\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"2023L\"}}]]}}}]},\"type\":\"Categorical\",\"cachedDisplayNames\":[{\"id\":{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"LocalDateTable_7f19aaf2-5c8d-4d14-b4e3-c001cc711ada\"}},\"Property\":\"Year\"}},\"Right\":{\"Literal\":{\"Value\":\"2023L\"}}}}},\"displayName\":\"2023\"}],\"howCreated\":1,\"objects\":{},\"ordinal\":4},{\"name\":\"Filterf3ae4e2e173ae831e31d\",\"expression\":{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Data\"}},\"Name\":\"Variation\",\"Property\":\"Loan Sanction Date\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Month\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"l\",\"Entity\":\"LocalDateTable_7f19aaf2-5c8d-4d14-b4e3-c001cc711ada\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"l\"}},\"Property\":\"Month\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'May'\"}}]]}}}]},\"type\":\"Categorical\",\"cachedDisplayNames\":[{\"id\":{\"scopeId\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"LocalDateTable_7f19aaf2-5c8d-4d14-b4e3-c001cc711ada\"}},\"Property\":\"Month\"}},\"Right\":{\"Literal\":{\"Value\":\"'May'\"}}}}},\"displayName\":\"May\"}],\"howCreated\":1,\"objects\":{},\"ordinal\":5}]",
+      "height": 720.00,
+      "name": "ReportSectionbad70bab93de6b377764",
+      "ordinal": 7,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"09ed7a81b90e2096fc55\",\"layouts\":[{\"id\":0,\"position\":{\"x\":771.5694567748203,\"y\":79.19167406489221,\"z\":14000,\"width\":46.25,\"height\":42.5,\"tabOrder\":14000}}],\"singleVisual\":{\"visualType\":\"image\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"imageUrl\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"icons8-client-management-320814599397667537.png\"}}}}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 42.50,
+          "width": 46.25,
+          "x": 771.57,
+          "y": 79.19,
+          "z": 14000.00
+        },
+        {
+          "config": "{\"name\":\"11a607a6c123a5df19a1\",\"layouts\":[{\"id\":0,\"position\":{\"x\":15.094390190790467,\"y\":76.84416824402419,\"z\":6000,\"width\":194.8548551902042,\"height\":167.410509388767,\"tabOrder\":6000}}],\"singleVisualGroup\":{\"displayName\":\"Group 3\",\"groupMode\":0}}",
+          "height": 167.41,
+          "width": 194.85,
+          "x": 15.09,
+          "y": 76.84,
+          "z": 6000.00
+        },
+        {
+          "config": "{\"name\":\"21e478d9c381de2d5db6\",\"layouts\":[{\"id\":0,\"position\":{\"x\":923.5022362183622,\"y\":8.233303740431163,\"z\":7000,\"width\":347.17097438818075,\"height\":93.31077572488653,\"tabOrder\":10000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"Data.Loan Sanction Date.Variation.Date Hierarchy.Day\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"Data\",\"Type\":0}],\"Select\":[{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Name\":\"Variation\",\"Property\":\"Loan Sanction Date\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Day\"},\"Name\":\"Data.Loan Sanction Date.Variation.Date Hierarchy.Day\",\"NativeReferenceName\":\"Loan Sanction Date Day\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Name\":\"Variation\",\"Property\":\"Loan Sanction Date\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Day\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"selection\":[{\"properties\":{\"selectAllCheckboxEnabled\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"singleSelect\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"strictSingleSelect\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Between'\"}}}}}],\"general\":[{\"properties\":{}}],\"header\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"numericInputStyle\":[{\"properties\":{\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'wf_standard-font, helvetica, arial, sans-serif'\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"textSize\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Date Range'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":-0.6}}}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"12D\"}}}}}],\"visualHeader\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}}}]}}}",
+          "filters": "[]",
+          "height": 93.31,
+          "width": 347.17,
+          "x": 923.50,
+          "y": 8.23,
+          "z": 7000.00
+        },
+        {
+          "config": "{\"name\":\"29fd031b2b6ea93daa82\",\"layouts\":[{\"id\":0,\"position\":{\"height\":45.40064541894966,\"width\":45.28317057237139,\"x\":86.44968927452724,\"y\":2.3172533198592054,\"z\":10000,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"image\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"imageUrl\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"icons8-receive-euro-648275464329845115.png\"}}}}}]}},\"parentGroupName\":\"819fcedd2c7a8aadf61a\",\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 45.40,
+          "width": 45.28,
+          "x": 86.45,
+          "y": 2.32,
+          "z": 10000.00
+        },
+        {
+          "config": "{\"name\":\"3035b5ada04777b8f58f\",\"layouts\":[{\"id\":0,\"position\":{\"x\":697.0863833565052,\"y\":75.47195095395233,\"z\":12000,\"width\":201.7159416405635,\"height\":168.78272667883886,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"cardVisual\",\"projections\":{\"Data\":[{\"queryRef\":\"All_measures.90+ Rate\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"All_measures\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"90+ Rate\"},\"Name\":\"All_measures.90+ Rate\",\"NativeReferenceName\":\"90+ Rate\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"90+ Rate\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"fillCustom\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"outline\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}},\"selector\":{\"id\":\"default\"}}],\"value\":[{\"properties\":{\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":-0.6}}}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"30D\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"horizontalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}},\"selector\":{\"id\":\"default\"}}],\"padding\":[{\"properties\":{\"paddingSelection\":{\"expr\":{\"Literal\":{\"Value\":\"'Normal'\"}}}},\"selector\":{\"id\":\"default\"}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"titleWrap\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}}}}]}}}",
+          "filters": "[{\"expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"All_measures\"}},\"Property\":\"Total Loan Amount\"}},\"type\":\"Advanced\",\"howCreated\":1,\"isHiddenInViewMode\":false}]",
+          "height": 168.78,
+          "width": 201.72,
+          "x": 697.09,
+          "y": 75.47,
+          "z": 12000.00
+        },
+        {
+          "config": "{\"name\":\"66c423f708540746ec85\",\"layouts\":[{\"id\":0,\"position\":{\"height\":166.87637864357475,\"width\":229.16028744200074,\"x\":222.2992009916414,\"y\":77.3782989892164,\"z\":2000,\"tabOrder\":5000}}],\"singleVisual\":{\"visualType\":\"cardVisual\",\"projections\":{\"Data\":[{\"queryRef\":\"All_measures.Avg Ticket\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"All_measures\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Avg Ticket\"},\"Name\":\"All_measures.Avg Ticket\",\"NativeReferenceName\":\"Avg Ticket\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Avg Ticket\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"value\":[{\"properties\":{\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"horizontalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"30D\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":-0.6}}}}}},\"selector\":{\"id\":\"default\"}}],\"shapeCustomRectangle\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'rectangle'\"}}}},\"selector\":{\"id\":\"default\"}}],\"fillCustom\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"outline\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}},\"selector\":{\"id\":\"default\"}}],\"padding\":[{\"properties\":{\"paddingSelection\":{\"expr\":{\"Literal\":{\"Value\":\"'Normal'\"}}}},\"selector\":{\"id\":\"default\"}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Avg Ticket'\"}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"titleWrap\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 166.88,
+          "width": 229.16,
+          "x": 222.30,
+          "y": 77.38,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"776d440458beb697b698\",\"layouts\":[{\"id\":0,\"position\":{\"height\":40.83281208113663,\"width\":48.89643463497453,\"x\":797.2104849225079,\"y\":72.72751637380861,\"z\":10000,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"image\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"imageUrl\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"icons8-receive-euro-648275464329845115.png\"}}}}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 40.83,
+          "width": 48.90,
+          "x": 797.21,
+          "y": 72.73,
+          "z": 10000.00
+        },
+        {
+          "config": "{\"name\":\"7fbf962943740dbe0f55\",\"layouts\":[{\"id\":0,\"position\":{\"height\":41.61654135338347,\"width\":44.024507270982504,\"x\":76.387761127925,\"y\":0,\"z\":9001,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"image\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"imageUrl\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"icons8-home-automation-507306953348256107.png\"}}}}}]}},\"parentGroupName\":\"11a607a6c123a5df19a1\",\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 41.62,
+          "width": 44.02,
+          "x": 76.39,
+          "y": 0.00,
+          "z": 9001.00
+        },
+        {
+          "config": "{\"name\":\"819fcedd2c7a8aadf61a\",\"layouts\":[{\"id\":0,\"position\":{\"height\":167.41050938876703,\"width\":215.43811454128206,\"x\":467.92609591450446,\"y\":76.84416824402419,\"z\":13000,\"tabOrder\":13000}}],\"singleVisualGroup\":{\"displayName\":\"Group 5\",\"groupMode\":0}}",
+          "height": 167.41,
+          "width": 215.44,
+          "x": 467.93,
+          "y": 76.84,
+          "z": 13000.00
+        },
+        {
+          "config": "{\"name\":\"82b8b6dad80500b1014f\",\"layouts\":[{\"id\":0,\"position\":{\"x\":15,\"y\":267.5,\"z\":0,\"width\":436.25,\"height\":443.75,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"lineStackedColumnComboChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Data.Loan Band\",\"active\":true}],\"Y2\":[{\"queryRef\":\"Divide(All_measures.Total Loan Amount, ScopedEval(All_measures.Total Loan Amount, []))\"},{\"queryRef\":\"All_measures.90+ Rate\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"Data\",\"Type\":0},{\"Name\":\"a\",\"Entity\":\"All_measures\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Loan Band\"},\"Name\":\"Data.Loan Band\",\"NativeReferenceName\":\"Loan Band\"},{\"Arithmetic\":{\"Left\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Total Loan Amount\"}},\"Right\":{\"ScopedEval\":{\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Total Loan Amount\"}},\"Scope\":[]}},\"Operator\":3},\"Name\":\"Divide(All_measures.Total Loan Amount, ScopedEval(All_measures.Total Loan Amount, []))\",\"NativeReferenceName\":\"%GT Total Loan Amount\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"90+ Rate\"},\"Name\":\"All_measures.90+ Rate\",\"NativeReferenceName\":\"90+ Rate\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Loan Band\"}}}]},\"columnProperties\":{\"Divide(All_measures.Total Loan Amount, ScopedEval(All_measures.Total Loan Amount, []))\":{\"displayName\":\"% Share\"}},\"drillFilterOtherVisuals\":true,\"objects\":{\"legend\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"position\":{\"expr\":{\"Literal\":{\"Value\":\"'TopCenter'\"}}},\"showTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"categoryAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"valueAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"' Loan Band wise % Share & 90+ Rate'\"}}},\"titleWrap\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'left'\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"visualTooltip\":[{\"properties\":{\"section\":{\"expr\":{\"Literal\":{\"Value\":\"'ReportSection72be0d4e3832aca062ad'\"}}},\"type\":{\"expr\":{\"Literal\":{\"Value\":\"'Default'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 443.75,
+          "width": 436.25,
+          "x": 15.00,
+          "y": 267.50,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"aa9c0f39228ac48e2d18\",\"layouts\":[{\"id\":0,\"position\":{\"x\":300.5155865257375,\"y\":8.233303740431163,\"z\":11000,\"width\":65.8664299234493,\"height\":56.26090889294628,\"tabOrder\":12000}}],\"singleVisual\":{\"visualType\":\"image\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"imageUrl\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"icons8-risk-649905700979013181.png\"}}}}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 56.26,
+          "width": 65.87,
+          "x": 300.52,
+          "y": 8.23,
+          "z": 11000.00
+        },
+        {
+          "config": "{\"name\":\"b02cfe2b8bfdae3904b2\",\"layouts\":[{\"id\":0,\"position\":{\"height\":167.41050938876703,\"width\":215.43811454128206,\"x\":0,\"y\":0,\"z\":3000,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"cardVisual\",\"projections\":{\"Data\":[{\"queryRef\":\"All_measures.Salaried %\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"All_measures\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Salaried %\"},\"Name\":\"All_measures.Salaried %\",\"NativeReferenceName\":\"Salaried %\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Salaried %\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"value\":[{\"properties\":{\"horizontalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"30D\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":-0.6}}}}}},\"selector\":{\"id\":\"default\"}}],\"padding\":[{\"properties\":{\"paddingSelection\":{\"expr\":{\"Literal\":{\"Value\":\"'Normal'\"}}}},\"selector\":{\"id\":\"default\"}}],\"fillCustom\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"outline\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}},\"selector\":{\"id\":\"default\"}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Salaried %'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}}}}]}},\"parentGroupName\":\"819fcedd2c7a8aadf61a\"}",
+          "filters": "[]",
+          "height": 167.41,
+          "width": 215.44,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"cb8dacfe903b4bacf68c\",\"layouts\":[{\"id\":0,\"position\":{\"height\":167.47767857142858,\"width\":195.50724637681157,\"x\":0,\"y\":0.5360553601746338,\"z\":0,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"cardVisual\",\"projections\":{\"Data\":[{\"queryRef\":\"All_measures.Number of Loans\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"All_measures\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Total Loans\"},\"Name\":\"All_measures.Number of Loans\",\"NativeReferenceName\":\"Total Loans\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Total Loans\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"fillCustom\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"outline\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}},\"selector\":{\"id\":\"default\"}}],\"value\":[{\"properties\":{\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"horizontalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"labelDisplayUnits\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"30D\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":-0.6}}}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'wf_standard-font, helvetica, arial, sans-serif'\"}}}},\"selector\":{\"id\":\"default\"}}],\"padding\":[{\"properties\":{\"paddingSelection\":{\"expr\":{\"Literal\":{\"Value\":\"'Normal'\"}}}},\"selector\":{\"id\":\"default\"}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Total Loans'\"}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"titleWrap\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}]}},\"parentGroupName\":\"11a607a6c123a5df19a1\"}",
+          "filters": "[]",
+          "height": 167.48,
+          "width": 195.51,
+          "x": 0.00,
+          "y": 0.54,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"cc34f5ebd31cc9f3c56e\",\"layouts\":[{\"id\":0,\"position\":{\"x\":467.5,\"y\":267.5,\"z\":1000,\"width\":431.25,\"height\":165,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"lineChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Data.Region\",\"active\":true},{\"queryRef\":\"Data.State\"},{\"queryRef\":\"Data.BRANCHNAME\"}],\"Y2\":[{\"queryRef\":\"All_measures.90+ Rate\"}],\"Y\":[{\"queryRef\":\"Divide(All_measures.Total Loan Amount, ScopedEval(All_measures.Total Loan Amount, []))\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"Data\",\"Type\":0},{\"Name\":\"a\",\"Entity\":\"All_measures\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Region\"},\"Name\":\"Data.Region\",\"NativeReferenceName\":\"Region\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"State\"},\"Name\":\"Data.State\",\"NativeReferenceName\":\"State\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Branch\"},\"Name\":\"Data.BRANCHNAME\",\"NativeReferenceName\":\"BRANCHNAME\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"90+ Rate\"},\"Name\":\"All_measures.90+ Rate\",\"NativeReferenceName\":\"90+ Rate\"},{\"Arithmetic\":{\"Left\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Total Loan Amount\"}},\"Right\":{\"ScopedEval\":{\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Total Loan Amount\"}},\"Scope\":[]}},\"Operator\":3},\"Name\":\"Divide(All_measures.Total Loan Amount, ScopedEval(All_measures.Total Loan Amount, []))\",\"NativeReferenceName\":\"%GT Total Loan Amount\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Region\"}}},{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"State\"}}},{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Branch\"}}}]},\"columnProperties\":{\"Divide(All_measures.Total Loan Amount, ScopedEval(All_measures.Total Loan Amount, []))\":{\"displayName\":\"% Share\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"legend\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"position\":{\"expr\":{\"Literal\":{\"Value\":\"'TopCenter'\"}}},\"showTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"categoryAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"valueAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"titleWrap\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'left'\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Region wise % Share & 90+ Rate'\"}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"visualTooltip\":[{\"properties\":{\"section\":{\"expr\":{\"Literal\":{\"Value\":\"'___AUTO___'\"}}},\"type\":{\"expr\":{\"Literal\":{\"Value\":\"'Default'\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}}}]}}}",
+          "filters": "[]",
+          "height": 165.00,
+          "width": 431.25,
+          "x": 467.50,
+          "y": 267.50,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"d22f334f88f0d1fddebf\",\"layouts\":[{\"id\":0,\"position\":{\"x\":13.722172900718606,\"y\":8.233303740431163,\"z\":8000,\"width\":1256.9510377058243,\"height\":68.61086450359304,\"tabOrder\":11000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Risk Dashboard \",\"textStyle\":{\"fontWeight\":\"bold\",\"fontSize\":\"28pt\",\"color\":\"#000000\"}}]}]}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 68.61,
+          "width": 1256.95,
+          "x": 13.72,
+          "y": 8.23,
+          "z": 8000.00
+        },
+        {
+          "config": "{\"name\":\"e8b91f1cecaf0bbbf198\",\"layouts\":[{\"id\":0,\"position\":{\"x\":467.5,\"y\":447.5,\"z\":3000,\"width\":431.25,\"height\":263.75,\"tabOrder\":7000}}],\"singleVisual\":{\"visualType\":\"pivotTable\",\"projections\":{\"Rows\":[{\"queryRef\":\"Data.Lender\",\"active\":true}],\"Values\":[{\"queryRef\":\"All_measures.Total Loan Amount\"},{\"queryRef\":\"All_measures.90+ Rate\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"Data\",\"Type\":0},{\"Name\":\"a\",\"Entity\":\"All_measures\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Lender\"},\"Name\":\"Data.Lender\",\"NativeReferenceName\":\"Lender\"},{\"Arithmetic\":{\"Left\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Total Loan Amount\"}},\"Right\":{\"ScopedEval\":{\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Total Loan Amount\"}},\"Scope\":[]}},\"Operator\":3},\"Name\":\"All_measures.Total Loan Amount\",\"NativeReferenceName\":\"% Share (Loan Amount)\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"90+ Rate\"},\"Name\":\"All_measures.90+ Rate\",\"NativeReferenceName\":\"90+ Rate\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Lender\"}}}]},\"expansionStates\":[{\"roles\":[\"Rows\"],\"levels\":[{\"queryRefs\":[\"Data.Lender\"],\"isCollapsed\":true,\"identityKeys\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Data\"}},\"Property\":\"Lender\"}}],\"isPinned\":true}],\"root\":{\"identityValues\":null}}],\"columnProperties\":{\"All_measures.Total Loan Amount\":{\"displayName\":\"% Share (Loan Amount)\"}},\"drillFilterOtherVisuals\":true,\"objects\":{\"rowHeaders\":[{\"properties\":{}}],\"subTotals\":[{\"properties\":{\"columnSubtotals\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"rowSubtotals\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"values\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"12D\"}}}}}],\"columnHeaders\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"11D\"}}}}}]},\"vcObjects\":{\"stylePreset\":[{\"properties\":{\"name\":{\"expr\":{\"Literal\":{\"Value\":\"'Default'\"}}}}}],\"general\":[{\"properties\":{\"keepLayerOrder\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[{\"expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"All_measures\"}},\"Property\":\"Total Loan Amount\"}},\"type\":\"Advanced\",\"howCreated\":1,\"isHiddenInViewMode\":false}]",
+          "height": 263.75,
+          "width": 431.25,
+          "x": 467.50,
+          "y": 447.50,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"e968cf610b10bdbba81b\",\"layouts\":[{\"id\":0,\"position\":{\"x\":775.3027688906012,\"y\":76.84416824402419,\"z\":4000,\"width\":48.02760515251512,\"height\":39.79430141208395,\"tabOrder\":8000}}],\"singleVisual\":{\"visualType\":\"image\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"imageUrl\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"icons8-client-management-329296912937572861.png\"}}}}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 39.79,
+          "width": 48.03,
+          "x": 775.30,
+          "y": 76.84,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"f56cb54c57a79ebc5c90\",\"layouts\":[{\"id\":0,\"position\":{\"height\":45.48007179932322,\"width\":40.96495855253247,\"x\":316.33829625543854,\"y\":76.84416824402419,\"z\":9000,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"image\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"imageUrl\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"icons8-average-645749719050282707.png\"}}}}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 45.48,
+          "width": 40.96,
+          "x": 316.34,
+          "y": 76.84,
+          "z": 9000.00
+        },
+        {
+          "config": "{\"name\":\"f73cf98fea4e57fea859\",\"layouts\":[{\"id\":0,\"position\":{\"x\":923.75,\"y\":116.25,\"z\":5000,\"width\":347.5,\"height\":595,\"tabOrder\":9000}}],\"singleVisual\":{\"visualType\":\"heatmapF244EA9EE1F34E828A80CF19B41976F8\",\"projections\":{\"location\":[{\"queryRef\":\"Data.State\"}],\"group\":[{\"queryRef\":\"Data.Pincode\"}],\"value\":[{\"queryRef\":\"All_measures.90+ Rate\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"Data\",\"Type\":0},{\"Name\":\"a\",\"Entity\":\"All_measures\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"State\"},\"Name\":\"Data.State\",\"NativeReferenceName\":\"State\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Pincode\"},\"Name\":\"Data.Pincode\",\"NativeReferenceName\":\"Pincode\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"90+ Rate\"},\"Name\":\"All_measures.90+ Rate\",\"NativeReferenceName\":\"90+ Rate\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"90+ Rate\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"persist\":[{\"properties\":{\"map\":{\"expr\":{\"Literal\":{\"Value\":\"'1706693246717[{\\\"latitude\\\":20.646028519999987,\\\"longitude\\\":79.784866335,\\\"altitude\\\":0,\\\"altitudeReference\\\":-1},4]'\"}}},\"locations\":{\"expr\":{\"Literal\":{\"Value\":\"'1706693246349{\\\"DELHI\\\":{\\\"latitude\\\":28.64339066,\\\"longitude\\\":77.11547852,\\\"type\\\":\\\"AdminDivision1\\\",\\\"name\\\":\\\"Delhi\\\",\\\"address\\\":\\\"DELHI\\\"},\\\"GUJARAT\\\":{\\\"latitude\\\":22.6926918,\\\"longitude\\\":71.59703827,\\\"type\\\":\\\"AdminDivision1\\\",\\\"name\\\":\\\"Gujarat\\\",\\\"address\\\":\\\"GUJARAT\\\"},\\\"KARNATAKA\\\":{\\\"latitude\\\":14.71042442,\\\"longitude\\\":76.16791534,\\\"type\\\":\\\"AdminDivision1\\\",\\\"name\\\":\\\"Karnataka\\\",\\\"address\\\":\\\"KARNATAKA\\\"},\\\"MAHARASHTRA\\\":{\\\"latitude\\\":19.45208549,\\\"longitude\\\":76.10894012,\\\"type\\\":\\\"AdminDivision1\\\",\\\"name\\\":\\\"Maharashtra\\\",\\\"address\\\":\\\"MAHARASHTRA\\\"},\\\"TAMIL NADU\\\":{\\\"latitude\\\":11.01610088,\\\"longitude\\\":78.40702057,\\\"type\\\":\\\"AdminDivision1\\\",\\\"name\\\":\\\"Tamil Nadu\\\",\\\"address\\\":\\\"TAMIL NADU\\\"},\\\"TELANGANA\\\":{\\\"latitude\\\":17.80065918,\\\"longitude\\\":79.00984955,\\\"type\\\":\\\"AdminDivision1\\\",\\\"name\\\":\\\"Telangana\\\",\\\"address\\\":\\\"TELANGANA\\\"},\\\"UTTAR PRADESH\\\":{\\\"latitude\\\":26.9235611,\\\"longitude\\\":80.56635284,\\\"type\\\":\\\"AdminDivision1\\\",\\\"name\\\":\\\"Uttar Pradesh\\\",\\\"address\\\":\\\"UTTAR PRADESH\\\"},\\\"ANDHRA PRADESH\\\":{\\\"latitude\\\":15.75551891,\\\"longitude\\\":79.96541595,\\\"type\\\":\\\"AdminDivision1\\\",\\\"name\\\":\\\"Andhra Pradesh\\\",\\\"address\\\":\\\"ANDHRA PRADESH\\\"},\\\"CHHATTISGARH\\\":{\\\"latitude\\\":21.26684952,\\\"longitude\\\":82.04127502,\\\"type\\\":\\\"AdminDivision1\\\",\\\"name\\\":\\\"Chhattisgarh\\\",\\\"address\\\":\\\"CHHATTISGARH\\\"},\\\"HARYANA\\\":{\\\"latitude\\\":29.1981945,\\\"longitude\\\":76.34024048,\\\"type\\\":\\\"AdminDivision1\\\",\\\"name\\\":\\\"Haryana\\\",\\\"address\\\":\\\"HARYANA\\\"},\\\"KERALA\\\":{\\\"latitude\\\":10.44991112,\\\"longitude\\\":76.40826416,\\\"type\\\":\\\"AdminDivision1\\\",\\\"name\\\":\\\"Kerala\\\",\\\"address\\\":\\\"KERALA\\\"},\\\"MADHYA PRADESH\\\":{\\\"latitude\\\":23.53817558,\\\"longitude\\\":78.28896332,\\\"type\\\":\\\"AdminDivision1\\\",\\\"name\\\":\\\"Madhya Pradesh\\\",\\\"address\\\":\\\"MADHYA PRADESH\\\"},\\\"PUNJAB\\\":{\\\"latitude\\\":30.84214592,\\\"longitude\\\":75.41682434,\\\"type\\\":\\\"AdminDivision1\\\",\\\"name\\\":\\\"Punjab\\\",\\\"address\\\":\\\"PUNJAB\\\"},\\\"RAJASTHAN\\\":{\\\"latitude\\\":26.58432388,\\\"longitude\\\":73.85012817,\\\"type\\\":\\\"AdminDivision1\\\",\\\"name\\\":\\\"Rajasthan\\\",\\\"address\\\":\\\"RAJASTHAN\\\"},\\\"UTTARAKHAND\\\":{\\\"latitude\\\":30.13202667,\\\"longitude\\\":79.20533752,\\\"type\\\":\\\"AdminDivision1\\\",\\\"name\\\":\\\"Uttarakhand\\\",\\\"address\\\":\\\"UTTARAKHAND\\\"},\\\"WEST BENGAL\\\":{\\\"latitude\\\":23.85415077,\\\"longitude\\\":87.9726944,\\\"type\\\":\\\"AdminDivision1\\\",\\\"name\\\":\\\"West Bengal\\\",\\\"address\\\":\\\"WEST BENGAL\\\"}}'\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"titleWrap\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}}}}],\"visualTooltip\":[{\"properties\":{\"section\":{\"expr\":{\"Literal\":{\"Value\":\"'ReportSection72be0d4e3832aca062ad'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 595.00,
+          "width": 347.50,
+          "x": 923.75,
+          "y": 116.25,
+          "z": 5000.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "Views",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "ReportSectionc6c9cb04cbcd3aec11eb",
+      "ordinal": 2,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"41dd8fafdb986ae3eb6d\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"z\":0,\"width\":399.7283531409168,\"height\":299.490662139219,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"lineStackedColumnComboChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Data.Loan Band\",\"active\":true}],\"Y\":[{\"queryRef\":\"All_measures.Total Loan Amount\"}],\"Y2\":[{\"queryRef\":\"Divide(All_measures.Total Loan Amount, ScopedEval(All_measures.Total Loan Amount, []))\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"Data\",\"Type\":0},{\"Name\":\"a\",\"Entity\":\"All_measures\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Loan Band\"},\"Name\":\"Data.Loan Band\",\"NativeReferenceName\":\"Loan Band\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Total Loan Amount\"},\"Name\":\"All_measures.Total Loan Amount\",\"NativeReferenceName\":\"Total Loan Amount\"},{\"Arithmetic\":{\"Left\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Total Loan Amount\"}},\"Right\":{\"ScopedEval\":{\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Total Loan Amount\"}},\"Scope\":[]}},\"Operator\":3},\"Name\":\"Divide(All_measures.Total Loan Amount, ScopedEval(All_measures.Total Loan Amount, []))\",\"NativeReferenceName\":\"%GT Total Loan Amount\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Loan Band\"}}}]},\"columnProperties\":{\"Divide(All_measures.Total Loan Amount, ScopedEval(All_measures.Total Loan Amount, []))\":{\"displayName\":\"% Share\"}},\"drillFilterOtherVisuals\":true,\"objects\":{\"legend\":[{\"properties\":{\"position\":{\"expr\":{\"Literal\":{\"Value\":\"'TopCenter'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 299.49,
+          "width": 399.73,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"b5170932c13df2aaad5b\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":309,\"z\":3000,\"width\":381,\"height\":396,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"pieChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Data.Lender\",\"active\":true}],\"Y\":[{\"queryRef\":\"All_measures.Total Loan Amount\"},{\"queryRef\":\"Divide(All_measures.Total Loan Amount, ScopedEval(All_measures.Total Loan Amount, []))\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"Data\",\"Type\":0},{\"Name\":\"a\",\"Entity\":\"All_measures\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Lender\"},\"Name\":\"Data.Lender\",\"NativeReferenceName\":\"Lender\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Total Loan Amount\"},\"Name\":\"All_measures.Total Loan Amount\",\"NativeReferenceName\":\"Total Loan Amount\"},{\"Arithmetic\":{\"Left\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Total Loan Amount\"}},\"Right\":{\"ScopedEval\":{\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Total Loan Amount\"}},\"Scope\":[]}},\"Operator\":3},\"Name\":\"Divide(All_measures.Total Loan Amount, ScopedEval(All_measures.Total Loan Amount, []))\",\"NativeReferenceName\":\"% Share\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Total Loan Amount\"}}}]},\"columnProperties\":{\"Divide(All_measures.Total Loan Amount, ScopedEval(All_measures.Total Loan Amount, []))\":{\"displayName\":\"% Share\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"position\":{\"expr\":{\"Literal\":{\"Value\":\"'outside'\"}}},\"overflow\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"legend\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 396.00,
+          "width": 381.00,
+          "x": 0.00,
+          "y": 309.00,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"cce4c0da962c62aef36c\",\"layouts\":[{\"id\":0,\"position\":{\"x\":399.7283531409168,\"y\":0,\"z\":1000,\"width\":568.421052631579,\"height\":299.490662139219,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"lineStackedColumnComboChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Data.Region\",\"active\":true},{\"queryRef\":\"Data.State\"},{\"queryRef\":\"Data.BRANCHNAME\"}],\"Y\":[{\"queryRef\":\"All_measures.Total Loan Amount\"}],\"Y2\":[{\"queryRef\":\"Divide(All_measures.Total Loan Amount, ScopedEval(All_measures.Total Loan Amount, []))\"}],\"Series\":[{\"queryRef\":\"Data.Region\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"Data\",\"Type\":0},{\"Name\":\"a\",\"Entity\":\"All_measures\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Total Loan Amount\"},\"Name\":\"All_measures.Total Loan Amount\",\"NativeReferenceName\":\"Total Loan Amount\"},{\"Arithmetic\":{\"Left\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Total Loan Amount\"}},\"Right\":{\"ScopedEval\":{\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Total Loan Amount\"}},\"Scope\":[]}},\"Operator\":3},\"Name\":\"Divide(All_measures.Total Loan Amount, ScopedEval(All_measures.Total Loan Amount, []))\",\"NativeReferenceName\":\"%GT Total Loan Amount\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Region\"},\"Name\":\"Data.Region\",\"NativeReferenceName\":\"Region\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"State\"},\"Name\":\"Data.State\",\"NativeReferenceName\":\"State\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Branch\"},\"Name\":\"Data.BRANCHNAME\",\"NativeReferenceName\":\"BRANCHNAME\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Region\"}}},{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"State\"}}},{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Branch\"}}}]},\"columnProperties\":{\"Divide(All_measures.Total Loan Amount, ScopedEval(All_measures.Total Loan Amount, []))\":{\"displayName\":\"% Share\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"legend\":[{\"properties\":{\"position\":{\"expr\":{\"Literal\":{\"Value\":\"'TopCenter'\"}}}}}]},\"vcObjects\":{\"visualTooltip\":[{\"properties\":{\"section\":{\"expr\":{\"Literal\":{\"Value\":\"'ReportSection72be0d4e3832aca062ad'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 299.49,
+          "width": 568.42,
+          "x": 399.73,
+          "y": 0.00,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"f9d469662474aa8d70a2\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"width\":100,\"height\":40,\"z\":2000,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"actionButton\",\"drillFilterOtherVisuals\":true,\"objects\":{\"icon\":[{\"properties\":{\"shapeType\":{\"expr\":{\"Literal\":{\"Value\":\"'back'\"}}}},\"selector\":{\"id\":\"default\"}}]},\"vcObjects\":{\"visualLink\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"type\":{\"expr\":{\"Literal\":{\"Value\":\"'Back'\"}}}}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 40.00,
+          "width": 100.00,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 2000.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ]
+}
