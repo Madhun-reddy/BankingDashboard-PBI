@@ -29,7 +29,8 @@ Therefore, I created 4 new columns all extracted from the source columns mention
 	• The second column was also manipulated from DPDs column to DPD Band and DPD Band Sort columns which were later used in summarizing data.
 	• For consistency columns have been renamed.
     	
-     	![Screenshot 2024-01-31 174321](https://github.com/Madhun-reddy/BankingDashboard-PBI/assets/119162777/9ec7520e-2dd6-4505-beba-470ff020383f)
+
+![Screenshot 2024-01-31 174321](https://github.com/Madhun-reddy/BankingDashboard-PBI/assets/119162777/9ec7520e-2dd6-4505-beba-470ff020383f)
 
 
 
