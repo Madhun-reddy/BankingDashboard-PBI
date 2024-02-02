@@ -48,12 +48,12 @@
           },
           {
             "name": "PBI_ResultType",
-            "value": "Table"
+            "value": "Exception"
           }
         ],
         "expression": [
           "let",
-          "    Source = Excel.Workbook(File.Contents(\"C:\\Users\\sudha\\Downloads\\Telegram Desktop\\Hiring_Assessment.xlsx\"), null, true),",
+          "    Source = Excel.Workbook(File.Contents(\"E:\\DV CLASS\\POWER BI\\Projects\\Bank Bajaj Dashboad Project\\BankingDashboard-PBI\\Assessment.xlsx\"), null, true),",
           "    Assignment_Sheet = Source{[Item=\"Assignment\",Kind=\"Sheet\"]}[Data],",
           "    #\"Promoted Headers\" = Table.PromoteHeaders(Assignment_Sheet, [PromoteAllScalars=true]),",
           "    #\"Changed Type\" = Table.TransformColumnTypes(#\"Promoted Headers\",{{\"Details of Assignment\", type any}, {\"Column2\", type text}, {\"Column3\", type text}, {\"Column4\", type any}, {\"Column5\", type any}})",
@@ -67,17 +67,13 @@
         "name": "Sales Dashboard",
         "annotations": [
           {
-            "name": "PBI_NavigationStepName",
-            "value": "Navigation"
-          },
-          {
             "name": "PBI_ResultType",
             "value": "Table"
           }
         ],
         "expression": [
           "let",
-          "    Source = Excel.Workbook(File.Contents(\"C:\\Users\\sudha\\Downloads\\Telegram Desktop\\Hiring_Assessment.xlsx\"), null, true),",
+          "    Source = Excel.Workbook(File.Contents(\"E:\\DV CLASS\\POWER BI\\Projects\\Bank Bajaj Dashboad Project\\BankingDashboard-PBI\\Assessment.xlsx\"), null, true),",
           "    #\"Sales Dashboard_Sheet\" = Source{[Item=\"Sales Dashboard\",Kind=\"Sheet\"]}[Data],",
           "    #\"Promoted Headers\" = Table.PromoteHeaders(#\"Sales Dashboard_Sheet\", [PromoteAllScalars=true]),",
           "    #\"Changed Type\" = Table.TransformColumnTypes(#\"Promoted Headers\",{{\"Filters >>>>>\", type text}, {\"Column2\", type any}, {\"Lender\", type text}, {\"Region\", type text}, {\"Loan Band\", type text}, {\"Date Range\", type text}, {\"Column7\", type text}, {\"Column8\", type text}, {\"Column9\", type text}})",
@@ -91,17 +87,13 @@
         "name": "Risk Dashboard",
         "annotations": [
           {
-            "name": "PBI_NavigationStepName",
-            "value": "Navigation"
-          },
-          {
             "name": "PBI_ResultType",
             "value": "Table"
           }
         ],
         "expression": [
           "let",
-          "    Source = Excel.Workbook(File.Contents(\"C:\\Users\\sudha\\Downloads\\Telegram Desktop\\Hiring_Assessment.xlsx\"), null, true),",
+          "    Source = Excel.Workbook(File.Contents(\"E:\\DV CLASS\\POWER BI\\Projects\\Bank Bajaj Dashboad Project\\BankingDashboard-PBI\\Assessment.xlsx\"), null, true),",
           "    #\"Risk Dashboard_Sheet\" = Source{[Item=\"Risk Dashboard\",Kind=\"Sheet\"]}[Data],",
           "    #\"Promoted Headers\" = Table.PromoteHeaders(#\"Risk Dashboard_Sheet\", [PromoteAllScalars=true]),",
           "    #\"Changed Type\" = Table.TransformColumnTypes(#\"Promoted Headers\",{{\"Filters >>>>>\", type text}, {\"Column2\", type any}, {\"Lender\", type text}, {\"Region\", type text}, {\"Loan Band\", type text}, {\"Date Range\", type any}, {\"DPD Band (30+/ 60+/ 90+)\", type text}, {\"Column8\", type text}, {\"Column9\", type text}})",
@@ -390,7 +382,7 @@
             "source": {
               "expression": [
                 "let",
-                "    Source = Excel.Workbook(File.Contents(\"C:\\Users\\sudha\\Downloads\\Telegram Desktop\\Hiring_Assessment.xlsx\"), null, true),",
+                "    Source = Excel.Workbook(File.Contents(\"E:\\DV CLASS\\POWER BI\\Projects\\Bank Bajaj Dashboad Project\\BankingDashboard-PBI\\Assessment.xlsx\"), null, true),",
                 "    Data_Sheet = Source{[Item=\"Data\",Kind=\"Sheet\"]}[Data],",
                 "    #\"Promoted Headers\" = Table.PromoteHeaders(Data_Sheet, [PromoteAllScalars=true]),",
                 "    #\"add Loan Band col\" = Table.AddColumn(#\"Promoted Headers\", \"Loan Band\", each if [Loan Amount] >= 5000000 then \"50 lacs+\" else if [Loan Amount] >= 3000000 then \"30 - 50\" else if [Loan Amount] >= 1000000 then \"10 - 30\" else \"Less than 10 lacs\"),",
