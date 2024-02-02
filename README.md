@@ -7,7 +7,7 @@
 
 # Loan Risk Dashboard
 
-![Risk Dashboard](https://github.com/Madhun-reddy/BankingDashboard-PBI/assets/119162777/3cd500a5-8785-49a6-a60c-ad87009d0c15)
+![Risk Dashboard](https://github.com/Madhun-reddy/BankingDashboard-PBI/assets/119162777/15dfcd70-28b1-4f59-bdea-3f09c9666774)
 
 
 ## Problem Statement
@@ -56,7 +56,7 @@ We can come to a conclusion that this is huge high risk indicator having greater
 
 ## Analysis & Visualisation
 
-![Loan Sales Dashboard](https://github.com/Madhun-reddy/BankingDashboard-PBI/assets/119162777/73fdb3d5-7a44-4ffb-9753-f885ed34f2c3)
+![Loan Sales Dashboard](https://github.com/Madhun-reddy/BankingDashboard-PBI/assets/119162777/8c8eb39a-7158-4b81-950d-c2cc46916583)
 
 
 ## Problem Statement
