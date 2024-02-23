@@ -58,7 +58,7 @@ We can come to a conclusion that this is huge high risk indicator having greater
 
 ## Analysis & Visualisation
 
-![Loan Sales Dashboard](https://github.com/Madhun-reddy/BankingDashboard-PBI/assets/119162777/8c8eb39a-7158-4b81-950d-c2cc46916583)
+![Loan Sales Dashboard](https://github.com/Madhun-reddy/BankingDashboard-PBI/blob/main/Screenshots/Screenshot%202024-02-23%20152046.png)
 
 
 ## Problem Statement
